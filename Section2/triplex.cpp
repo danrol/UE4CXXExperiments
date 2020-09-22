@@ -10,8 +10,11 @@ int main()
 
   int a = 3; //variable declaration
   int b = 3;
-  int c = 2;
+  const int c = 2; //declare constant variable 
 
+/* 
+multi line comment
+*/
   int sum = a + b + c;
   int prod = a * b *c;
   std::cout << std::endl;

@@ -3,16 +3,13 @@
 
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
-    // Welcome message
-    // define hidden word
-    // define num of lives
     Super::BeginPlay();
 
+    SetupGame(); 
     PrintLine(TEXT("Welcome to  Bull and Cows game!"));
-    PrintLine(TEXT("Guess the 5 letter word!")); // TODO remove hard code
+    //PrintLine(FString::Printf(TEXT("Guess the %s letter word"), HiddenWordLen)); // using printf. But no need cause already included as part of PrintLine implementation
+    PrintLine(TEXT("Guess the %i letter word"), HiddenWordLen);
     PrintLine(TEXT("Press enter to continue..."));
-
-    SetupGame(); //Setting upd game
 }
 
 void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
@@ -20,8 +17,6 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     ClearScreen();
 
     // Checking PlayerGuess
-
- 
         if (Input == HiddenWord)
         {
             PrintLine(TEXT("Win!!!!"));
@@ -30,7 +25,7 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
         {
             if (HiddenWordLen != Input.Len())
             {
-                PrintLine(TEXT("Input should be of length"));
+                PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
             }
             PrintLine(TEXT("Loose"));
     }
@@ -54,7 +49,9 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
 
 void UBullCowCartridge::SetupGame()
 {
-    HiddenWord = TEXT("above");
+    // define hidden word
+    // define num of lives
+    HiddenWord = TEXT("shit");
     HiddenWordLen = HiddenWord.Len();
-    NumOfLives = 5;
+    NumOfLives = HiddenWord.Len();
 }

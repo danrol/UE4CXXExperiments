@@ -17,27 +17,12 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     }
     else // Checking PlayerGuess
     {
-        CheckGuess(Input);        
+        CheckGuess(Input);
         if (bIsGameOver == true)
         {
             EndGame();
         }
     }
-
-    // Check If Isogram
-    // Prompt To Guess Again
-    // Check Right Number Of Characters
-    // Prompt To Guess Again
-
-    // Remove Life
-
-    // Check If Lives > 0
-    // If Yes GuessAgain
-    // Show Lives Left
-    // If No Show GameOver and HiddenWord?
-    // Prompt To Play Again, Press Enter To Play Again?
-    // Check User Input
-    // PlayAgain Or Quit
 }
 
 void UBullCowCartridge::SetupGame()
@@ -62,25 +47,38 @@ void UBullCowCartridge::EndGame()
 
 void UBullCowCartridge::CheckGuess(const FString &Guess)
 {
+    // Check If Isogram
+    // Prompt To Guess Again
+    // Check Right Number Of Characters
+    // Prompt To Guess Again
+
+    // Remove Life
+
+    // Check If Lives > 0
+    // If Yes GuessAgain
+    // Show Lives Left
+    // If No Show GameOver and HiddenWord?
+    // Prompt To Play Again, Press Enter To Play Again?
+    // Check User Input
+    // PlayAgain Or Quit
     if (Guess == HiddenWord)
     {
         PrintLine(TEXT("Win!!!!"));
         bIsGameOver = true;
+        return; // use early returns to use less nested ifs
     }
-    else
+
+    if (HiddenWordLen != Guess.Len())
     {
-        if (HiddenWordLen != Guess.Len())
-        {
-            PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
-        }
-        else
-        {
-            --NumOfLives;
-            PrintLine(TEXT("Wrong Guess. Lives left %i"), NumOfLives);
-            if (NumOfLives <= 0)
-            {
-                bIsGameOver = true;
-            }
-        }
+        PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
+        return;
+    }
+    --NumOfLives;
+    PrintLine(TEXT("Wrong Guess. Lives left %i"), NumOfLives);
+    if (NumOfLives <= 0)
+    {
+        PrintLine(TEXT("No Lives left\nHidden word was %s"), *HiddenWord);
+        bIsGameOver = true;
+        return;
     }
 }

@@ -78,5 +78,5 @@ void UBullCowCartridge::SetupGame()
 
 void UBullCowCartridge::EndGame()
 {
-    PrintLine("Game is finished. Press Enter to play again");
+    PrintLine("Game is finished. \nPress Enter to play again");
 }

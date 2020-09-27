@@ -7,15 +7,19 @@
 #include "BullCowCartridge.generated.h"
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
+
+
 class BULLCOWGAME_API UBullCowCartridge : public UCartridge
 {
 	GENERATED_BODY()
 
-	public:
+public:
 	virtual void BeginPlay() override;
-	virtual void OnInput(const FString& Input) override;
+	virtual void OnInput(const FString &Input) override;
+	void InitGame(); //that's how we define our function
 
 	// Your declarations go below!
 	private:
-	
+		FString HiddenWord; // Those variables may have different values in deferrent instances of class and won't be global
+		int32 NumOfLives;
 };

@@ -5,21 +5,23 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
 
-    SetupGame(); 
-    PrintLine(TEXT("Welcome to  Bull and Cows game!"));
-    //PrintLine(FString::Printf(TEXT("Guess the %s letter word"), HiddenWordLen)); // using printf. But no need cause already included as part of PrintLine implementation
-    PrintLine(TEXT("Guess the %i letter word"), HiddenWordLen);
-    PrintLine(TEXT("Press enter to continue..."));
+    SetupGame();
 }
 
 void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
 {
     ClearScreen();
-
-    // Checking PlayerGuess
+    if (bIsGameOver == true)
+    {
+        SetupGame();
+    }
+    else
+    {
+        // Checking PlayerGuess
         if (Input == HiddenWord)
         {
             PrintLine(TEXT("Win!!!!"));
+            bIsGameOver = true;
         }
         else
         {
@@ -27,9 +29,21 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
             {
                 PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
             }
-            PrintLine(TEXT("Loose"));
+            else
+            {
+                --NumOfLives;
+                PrintLine(TEXT("Wrong Guess. Lives left %i"), NumOfLives);
+                if (NumOfLives <= 0)
+                {
+                    bIsGameOver = true;
+                }
+            }
+        }
+        if (bIsGameOver == true)
+        {
+            EndGame();
+        }
     }
-
 
     // Check If Isogram
     // Prompt To Guess Again
@@ -54,4 +68,15 @@ void UBullCowCartridge::SetupGame()
     HiddenWord = TEXT("shit");
     HiddenWordLen = HiddenWord.Len();
     NumOfLives = HiddenWord.Len();
+    bIsGameOver = false;
+
+    PrintLine(TEXT("Welcome to  Bull and Cows game!"));
+    //PrintLine(FString::Printf(TEXT("Guess the %s letter word"), HiddenWordLen)); // using printf. But no need cause already included as part of PrintLine implementation
+    PrintLine(TEXT("Guess the %i letter word"), HiddenWordLen);
+    PrintLine(TEXT("Press enter to continue..."));
+}
+
+void UBullCowCartridge::EndGame()
+{
+    PrintLine("Game is finished. Press Enter to play again");
 }

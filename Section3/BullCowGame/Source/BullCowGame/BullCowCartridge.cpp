@@ -7,25 +7,35 @@ void UBullCowCartridge::BeginPlay() // When the game starts
     // define hidden word
     // define num of lives
     Super::BeginPlay();
-    
-    InitGame(); //Setting upd game
 
+    PrintLine(TEXT("Welcome to  Bull and Cows game!"));
+    PrintLine(TEXT("Guess the 5 letter word!")); // TODO remove hard code
+    PrintLine(TEXT("Press enter to continue..."));
+
+    SetupGame(); //Setting upd game
 }
 
-void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
+void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
 {
     ClearScreen();
 
     // Checking PlayerGuess
-    
-    if(Input == HiddenWord)
-    {
-        PrintLine(TEXT("Win!!!!"));
+
+ 
+        if (Input == HiddenWord)
+        {
+            PrintLine(TEXT("Win!!!!"));
+        }
+        else
+        {
+            if (HiddenWordLen != Input.Len())
+            {
+                PrintLine(TEXT("Input should be of length"));
+            }
+            PrintLine(TEXT("Loose"));
     }
-    else
-    {
-        PrintLine(TEXT("Loose"));
-    }
+
+
     // Check If Isogram
     // Prompt To Guess Again
     // Check Right Number Of Characters
@@ -42,11 +52,9 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     // PlayAgain Or Quit
 }
 
-void UBullCowCartridge::InitGame()
+void UBullCowCartridge::SetupGame()
 {
-    HiddenWord = TEXT("above"); //TODO move outside this function
+    HiddenWord = TEXT("above");
+    HiddenWordLen = HiddenWord.Len();
     NumOfLives = 5;
-    PrintLine(TEXT("Welcome to  Bull and Cows game!"));
-    PrintLine(TEXT("Guess the 5 letter word!")); // TODO remove hard code
-    PrintLine(TEXT("Press enter to continue..."));
 }

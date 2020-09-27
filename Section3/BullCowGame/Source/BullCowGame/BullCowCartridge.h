@@ -16,10 +16,11 @@ class BULLCOWGAME_API UBullCowCartridge : public UCartridge
 public:
 	virtual void BeginPlay() override;
 	virtual void OnInput(const FString &Input) override;
-	void InitGame(); //that's how we define our function
+	void SetupGame(); //that's how we define our function
 
 	// Your declarations go below!
 	private:
 		FString HiddenWord; // Those variables may have different values in deferrent instances of class and won't be global
+		int32 HiddenWordLen;
 		int32 NumOfLives;
 };

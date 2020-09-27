@@ -6,8 +6,7 @@
 #include "Console/Cartridge.h"
 #include "BullCowCartridge.generated.h"
 
-UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
-
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 
 class BULLCOWGAME_API UBullCowCartridge : public UCartridge
 {
@@ -18,11 +17,12 @@ public:
 	virtual void OnInput(const FString &Input) override;
 	void SetupGame(); //that's how we define our function
 	void EndGame();
+	void CheckGuess(const FString &Guess);
 
 	// Your declarations go below!
-	private:
-		FString HiddenWord; // Those variables may have different values in deferrent instances of class and won't be global
-		int32 HiddenWordLen;
-		int32 NumOfLives;
-		bool bIsGameOver; // Boolean variable names should always start with "b"
+private:
+	FString HiddenWord; // Those variables may have different values in deferrent instances of class and won't be global
+	int32 HiddenWordLen;
+	int32 NumOfLives;
+	bool bIsGameOver; // Boolean variable names should always start with "b"
 };

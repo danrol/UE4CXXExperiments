@@ -15,30 +15,9 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     {
         SetupGame();
     }
-    else
+    else // Checking PlayerGuess
     {
-        // Checking PlayerGuess
-        if (Input == HiddenWord)
-        {
-            PrintLine(TEXT("Win!!!!"));
-            bIsGameOver = true;
-        }
-        else
-        {
-            if (HiddenWordLen != Input.Len())
-            {
-                PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
-            }
-            else
-            {
-                --NumOfLives;
-                PrintLine(TEXT("Wrong Guess. Lives left %i"), NumOfLives);
-                if (NumOfLives <= 0)
-                {
-                    bIsGameOver = true;
-                }
-            }
-        }
+        CheckGuess(Input);        
         if (bIsGameOver == true)
         {
             EndGame();
@@ -73,10 +52,35 @@ void UBullCowCartridge::SetupGame()
     PrintLine(TEXT("Welcome to  Bull and Cows game!"));
     //PrintLine(FString::Printf(TEXT("Guess the %s letter word"), HiddenWordLen)); // using printf. But no need cause already included as part of PrintLine implementation
     PrintLine(TEXT("Guess the %i letter word"), HiddenWordLen);
-    PrintLine(TEXT("Press enter to continue..."));
+    PrintLine(TEXT("Enter guess.\nPress enter to continue..."));
 }
 
 void UBullCowCartridge::EndGame()
 {
     PrintLine("Game is finished. \nPress Enter to play again");
+}
+
+void UBullCowCartridge::CheckGuess(const FString &Guess)
+{
+    if (Guess == HiddenWord)
+    {
+        PrintLine(TEXT("Win!!!!"));
+        bIsGameOver = true;
+    }
+    else
+    {
+        if (HiddenWordLen != Guess.Len())
+        {
+            PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
+        }
+        else
+        {
+            --NumOfLives;
+            PrintLine(TEXT("Wrong Guess. Lives left %i"), NumOfLives);
+            if (NumOfLives <= 0)
+            {
+                bIsGameOver = true;
+            }
+        }
+    }
 }

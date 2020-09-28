@@ -18,6 +18,7 @@ public:
 	void SetupGame(); //that's how we define our function
 	void EndGame();
 	void CheckGuess(const FString &Guess);
+	bool IsIsogram(const FString &Word) const;
 
 	// Your declarations go below!
 private:

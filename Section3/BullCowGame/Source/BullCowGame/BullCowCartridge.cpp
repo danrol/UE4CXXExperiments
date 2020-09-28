@@ -42,7 +42,7 @@ void UBullCowCartridge::SetupGame()
 
 void UBullCowCartridge::EndGame()
 {
-    PrintLine("Game is finished. \nPress Enter to play again");
+    PrintLine("Game is finished. \nPress Enter to play again...");
 }
 
 void UBullCowCartridge::CheckGuess(const FString &Guess)
@@ -73,6 +73,13 @@ void UBullCowCartridge::CheckGuess(const FString &Guess)
         PrintLine(TEXT("Input should be of length %i"), HiddenWordLen);
         return;
     }
+
+    if (!IsIsogram(Guess))
+    {
+        PrintLine(TEXT("Guess should be isogram.\nTry again"));
+        return;
+    }
+
     --NumOfLives;
     PrintLine(TEXT("Wrong Guess. Lives left %i"), NumOfLives);
     if (NumOfLives <= 0)
@@ -81,4 +88,10 @@ void UBullCowCartridge::CheckGuess(const FString &Guess)
         bIsGameOver = true;
         return;
     }
+}
+
+// This funcition doesn't change class variables (performs check and returns result). That's why it is constant
+bool UBullCowCartridge::IsIsogram(const FString &Word) const
+{
+    
 }

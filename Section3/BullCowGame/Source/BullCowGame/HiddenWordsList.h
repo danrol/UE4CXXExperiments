@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 
-const TArray<FString> HiddenWords =
+const TArray<FString> HiddenWordsArr =
 {
 TEXT("regulations"),
 TEXT("switzerland"),

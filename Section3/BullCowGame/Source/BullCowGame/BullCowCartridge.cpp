@@ -1,15 +1,18 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 #include "BullCowCartridge.h"
-#include "HiddenWordList.h"
+#include "HiddenWordsList.h"
 
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
 
+    // PrintLine(TEXT("%i"), FMath::RandRange(0, 20)); // get random number in range
+
     SetupGame();
 }
 
-void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
+void UBullCowCartridge::OnInput(const FString& PlayerInput) // When the player hits enter
+// always define pointer variables as "const"
 {
     ClearScreen();
     if (bIsGameOver == true)
@@ -18,7 +21,7 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     }
     else // Checking PlayerGuess
     {
-        CheckGuess(Input);
+        CheckGuess(PlayerInput);
         if (bIsGameOver == true)
         {
             EndGame();
@@ -30,7 +33,8 @@ void UBullCowCartridge::SetupGame()
 {
     // define hidden word
     // define num of lives
-    HiddenWord = TEXT("shit");
+    HiddenWord = HiddenWordsArr[FMath::RandRange(0, HiddenWordsArr.Num() - 1)];
+    PrintLine(TEXT("HiddenWord is %s"), *HiddenWord);
     HiddenWordLen = HiddenWord.Len();
     NumOfLives = HiddenWord.Len();
     bIsGameOver = false;
@@ -46,7 +50,7 @@ void UBullCowCartridge::EndGame()
     PrintLine("Game is finished. \nPress Enter to play again...");
 }
 
-void UBullCowCartridge::CheckGuess(const FString &Guess)
+void UBullCowCartridge::CheckGuess(const FString& Guess)
 {
     // Check If Isogram
     // Prompt To Guess Again
@@ -92,7 +96,7 @@ void UBullCowCartridge::CheckGuess(const FString &Guess)
 }
 
 // This funcition doesn't change class variables (performs check and returns result). That's why it is constant
-bool UBullCowCartridge::IsIsogram(const FString &Word) const
+bool UBullCowCartridge::IsIsogram(const FString& Word) const
 {
-    
+    return true;
 }

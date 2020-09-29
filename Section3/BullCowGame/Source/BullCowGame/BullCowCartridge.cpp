@@ -93,10 +93,35 @@ void UBullCowCartridge::CheckGuess(const FString& Guess)
         bIsGameOver = true;
         return;
     }
+    GetBullsAndCows(Guess);
+    PrintLine(TEXT("Number of Bulls = %i, number of Cows = %i"), Bulls, Cows);
 }
 
 // This funcition doesn't change class variables (performs check and returns result). That's why it is constant
 bool UBullCowCartridge::IsIsogram(const FString& Word) const
 {
     return true;
+}
+
+void UBullCowCartridge::GetBullsAndCows(const FString &Guess)
+{
+    Bulls = 0;
+    Cows = 0;
+    for(int32 GuessIndex = 0; GuessIndex < Guess.Len(); GuessIndex++)
+    {
+        if(Guess[GuessIndex] == HiddenWord[GuessIndex])
+        {
+            ++Bulls;
+            continue;
+        }
+
+        for(int32 HiddenIndex = 0; HiddenIndex < HiddenWord.Len(); HiddenIndex++)
+        {
+            if (Guess[GuessIndex] == HiddenWord[HiddenIndex])
+            {
+                ++Cows;
+                break;
+            }
+        }
+    }
 }

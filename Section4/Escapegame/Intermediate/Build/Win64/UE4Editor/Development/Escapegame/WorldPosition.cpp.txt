@@ -1,0 +1,3 @@
+D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\Definitions.Escapegame.h
+D:\Projects\UE4UdemyCXX\Section4\Escapegame\Source\Escapegame\WorldPosition.h
+D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Inc\Escapegame\WorldPosition.generated.h

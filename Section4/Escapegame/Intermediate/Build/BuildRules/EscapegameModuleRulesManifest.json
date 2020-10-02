@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Projects\\UE4UdemyCXX\\Section 4\\Escapegame\\Source\\Escapegame\\Escapegame.Build.cs",
-		"D:\\Projects\\UE4UdemyCXX\\Section 4\\Escapegame\\Source\\Escapegame.Target.cs",
-		"D:\\Projects\\UE4UdemyCXX\\Section 4\\Escapegame\\Source\\EscapegameEditor.Target.cs"
+		"D:\\Projects\\UE4UdemyCXX\\Section4\\Escapegame\\Source\\Escapegame\\Escapegame.Build.cs",
+		"D:\\Projects\\UE4UdemyCXX\\Section4\\Escapegame\\Source\\Escapegame.Target.cs",
+		"D:\\Projects\\UE4UdemyCXX\\Section4\\Escapegame\\Source\\EscapegameEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.3"
 }

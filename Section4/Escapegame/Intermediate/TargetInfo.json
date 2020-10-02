@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Escapegame",
-			"Path": "D:\\Projects\\UE4UdemyCXX\\Section 4\\Escapegame\\Source\\Escapegame.Target.cs",
+			"Path": "D:\\Projects\\UE4UdemyCXX\\Section4\\Escapegame\\Source\\Escapegame.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "EscapegameEditor",
-			"Path": "D:\\Projects\\UE4UdemyCXX\\Section 4\\Escapegame\\Source\\EscapegameEditor.Target.cs",
+			"Path": "D:\\Projects\\UE4UdemyCXX\\Section4\\Escapegame\\Source\\EscapegameEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

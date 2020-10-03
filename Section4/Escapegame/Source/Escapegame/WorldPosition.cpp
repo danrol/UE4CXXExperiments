@@ -2,6 +2,7 @@
 
 
 #include "WorldPosition.h"
+#include "GameFramework/Actor.h" //need it to access GetOwner and other actor related methods
 
 // Sets default values for this component's properties
 UWorldPosition::UWorldPosition()
@@ -19,7 +20,10 @@ void UWorldPosition::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("World Position Begin Play"));
+	// UE_LOG(LogTemp, Warning, TEXT("World Position Begin Play"));
+
+	// FString ParentActorName = GetOwner()->GetName();
+	// UE_LOG(LogTemp, Warning, TEXT("Parent actor name is %s"), *ParentActorName);
 }
 
 

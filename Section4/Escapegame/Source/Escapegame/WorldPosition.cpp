@@ -19,8 +19,7 @@ void UWorldPosition::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	UE_LOG(LogTemp, Warning, TEXT("World Position Begin Play"));
 }
 
 

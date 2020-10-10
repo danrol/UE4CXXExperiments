@@ -23,7 +23,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	void OpenDoor() const;
 
 private:
-	float TargetYaw = 90.f; 
+	float TickDeltaTime;
 };

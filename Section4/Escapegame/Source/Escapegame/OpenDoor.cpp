@@ -18,12 +18,7 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	
-	// float DoorYawDelta = 90.f;
-	// FRotator CurrentRotation = GetOwner()->GetActorRotation();
-	// FRotator OpenedDoorRotation = CurrentRotation.Add(0.f, DoorYawDelta, 0.f);
-
-	// GetOwner()->SetActorRotation(OpenedDoorRotation, ETeleportType::TeleportPhysics);
+	OpenDoor();
 }
 
 // Called every frame
@@ -31,7 +26,28 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
-	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
-	// ...
+	TickDeltaTime = DeltaTime;
+}
+
+void UOpenDoor::OpenDoor() const
+{
+
+	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
+
+	float DoorAlfa = 0.f;
+	float AlfaDelta = 0.1f;
+	float DoorPitch = GetOwner()->GetActorRotation().Pitch;
+	float DoorRoll = GetOwner()->GetActorRotation().Roll;
+	float DoorStartYaw = GetOwner()->GetActorRotation().Yaw;
+	float TargetYaw = DoorStartYaw + 90.f;
+	while (DoorAlfa <= 1)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
+		UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
+
+		DoorAlfa = DoorAlfa + 0.01f;
+		float DoorUpdatedYaw = FMath::Lerp(DoorStartYaw, TargetYaw, DoorAlfa);
+		// float DoorUpdatedYaw = FMath::FInterpTo(DoorStartYaw, TargetYaw, TickDeltaTime, 2);
+		GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
+	}
 }

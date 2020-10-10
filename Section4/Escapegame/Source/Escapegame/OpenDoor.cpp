@@ -18,12 +18,12 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	float DoorYawDelta = 90.f;
+	
+	// float DoorYawDelta = 90.f;
+	// FRotator CurrentRotation = GetOwner()->GetActorRotation();
+	// FRotator OpenedDoorRotation = CurrentRotation.Add(0.f, DoorYawDelta, 0.f);
 
-	FRotator CurrentRotation = GetOwner()->GetActorRotation();
-	FRotator OpenedDoorRotation = CurrentRotation.Add(0.f, DoorYawDelta, 0.f);
-
-	GetOwner()->SetActorRotation(OpenedDoorRotation, ETeleportType::TeleportPhysics);
+	// GetOwner()->SetActorRotation(OpenedDoorRotation, ETeleportType::TeleportPhysics);
 }
 
 // Called every frame
@@ -31,5 +31,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
+	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
 	// ...
 }

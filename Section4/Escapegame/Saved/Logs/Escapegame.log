@@ -1400,3 +1400,385 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.10.13-05.42.11:628][877]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000204E00A4A00), frame # 20877
 [2020.10.13-05.42.11:629][877]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
 [2020.10.13-05.42.11:667][878]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2020.10.13-05.47.27:216][927]Candidate modules for hot reload:
+[2020.10.13-05.47.27:216][927]  Escapegame
+[2020.10.13-05.47.27:216][927]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Escapegame,5399 EscapegameEditor Win64 Development -Project="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Escapegame.uproject" "D:/Projects/UE4UdemyCXX/Section4/Escapegame/Escapegame.uproject"  -IgnoreJunk]
+[2020.10.13-05.47.27:221][927]Warning: Starting HotReload took  0.0s.
+[2020.10.13-05.47.51:058][ 16]CompilerResultsLog: New page: Compilation - Oct 13, 2020, 3:47:51 PM
+[2020.10.13-05.47.51:060][ 16]CompilerResultsLog: Parsing headers for EscapegameEditor
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   Running UnrealHeaderTool "D:\Projects\UE4UdemyCXX\Section4\Escapegame\Escapegame.uproject" "D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\EscapegameEditor\Development\EscapegameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DAN\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog: Reflection code generated for EscapegameEditor in 12.9029653 seconds
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog: Building EscapegameEditor...
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog: Using Visual Studio 2019 14.27.29111 toolchain (D:\Program Files\VisualStudio\2019\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog: Building 6 actions with 4 processes...
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   [1/6] OpenDoor.cpp
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   [2/6] Escapegame.init.gen.cpp
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   [3/6] OpenDoor.gen.cpp
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   [4/6] UE4Editor-Escapegame-5399.lib
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:      Creating library D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-5399.lib and object D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-5399.exp
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   [5/6] UE4Editor-Escapegame-5399.dll
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:      Creating library D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-5399.suppressed.lib and object D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-5399.suppressed.exp
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog:   [6/6] EscapegameEditor.target
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog: Total time in Parallel executor: 7.94 seconds
+[2020.10.13-05.47.51:061][ 16]CompilerResultsLog: Total execution time: 23.44 seconds
+[2020.10.13-05.47.51:061][ 16]LogMainFrame: MainFrame: Module compiling took 23.861 seconds
+[2020.10.13-05.47.51:129][ 16]LogClass: Could not find existing class OpenDoor in package /Script/Escapegame for HotReload, assuming new class
+[2020.10.13-05.47.51:146][ 16]LogHotReload: Re-instancing OpenDoor after hot-reload.
+[2020.10.13-05.47.51:162][ 16]LogContentBrowser: Native class hierarchy updated for 'Escapegame' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2020.10.13-05.47.51:165][ 16]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.13-05.47.51:310][ 16]LogContentBrowser: Native class hierarchy populated in 0.0419 seconds. Added 3469 classes and 833 folders.
+[2020.10.13-05.47.51:313][ 16]Display: HotReload took 24.1s.
+[2020.10.13-05.48.05:310][ 57]LogTemp: Repeating last play command: Selected Viewport
+[2020.10.13-05.48.05:347][ 57]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.13-05.48.05:347][ 57]PIE: New page: PIE session: Main (Oct 13, 2020, 3:48:05 PM)
+[2020.10.13-05.48.05:347][ 57]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.48.05:352][ 57]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004379s)
+[2020.10.13-05.48.05:355][ 57]LogAIModule: Creating AISystem for world Main
+[2020.10.13-05.48.05:355][ 57]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000204C8EC7A00), frame # 22057
+[2020.10.13-05.48.05:355][ 57]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000204E9712480), frame # 22057
+[2020.10.13-05.48.05:356][ 57]LogPlayLevel: PIE: World Init took: (0.003608s)
+[2020.10.13-05.48.05:356][ 57]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.008230s)
+[2020.10.13-05.48.05:369][ 57]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2020.10.13-05.48.05:370][ 57]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.13-05.48.05:370][ 57]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.13-05.48.05:371][ 57]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.13-05.48.05:371][ 57]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.13-05.48.05:371][ 57]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.13-05.48.05:371][ 57]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.13-05.48.05:371][ 57]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.13-05.48.05:371][ 57]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.13-05.48.05:372][ 57]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.13-05.48.05:372][ 57]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.13-05.48.05:389][ 57]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.13-05.48.05:389][ 57]LogAudioMixer: Display: 1: FrontRight
+[2020.10.13-05.48.05:576][ 57]LogAudioMixer: Display: Using Audio Device Speakers (Conexant SmartAudio HD)
+[2020.10.13-05.48.05:577][ 57]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.13-05.48.05:577][ 57]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.13-05.48.05:577][ 57]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.13-05.48.05:577][ 57]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.13-05.48.05:608][ 57]LogInit: FAudioDevice initialized.
+[2020.10.13-05.48.05:622][ 57]LogLoad: Game class is 'GameModeBase'
+[2020.10.13-05.48.05:624][ 57]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2020.10.13-10.48.05
+[2020.10.13-05.48.05:625][ 57]LogWorld: Bringing up level for play took: 0.001728
+[2020.10.13-05.48.05:625][ 57]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.10.13-05.48.05:628][ 57]PIE: Server logged in
+[2020.10.13-05.48.05:629][ 57]PIE: Play in editor total start time 0.289 seconds.
+[2020.10.13-05.48.07:466][154]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.48.07:466][154]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.48.07:467][154]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2020.10.13-05.48.07:467][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.48.07:481][154]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.13-05.48.07:483][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.48.07:531][154]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.48.07:531][154]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000204E9712480), frame # 22154
+[2020.10.13-05.48.07:531][154]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000204C8EC7A00), frame # 22154
+[2020.10.13-05.48.07:533][154]LogUObjectHash: Compacting FUObjectHashTables data took   1.22ms
+[2020.10.13-05.48.07:583][155]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.10.13-05.48.10:649][313]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame)
+[2020.10.13-05.48.11:299][340]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Door)
+[2020.10.13-05.48.17:145][596]LogSlate: Took 0.021036 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.10.13-05.48.32:832][228]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2020.10.13-05.48.32:882][228]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Main" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.10.13-05.48.32:896][228]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2020.10.13-05.48.32:941][228]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/Main7E75126041C759CD598F7F9801A14720.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Maps/Main.umap'
+[2020.10.13-05.48.32:997][228]LogFileHelpers: Saving map 'Main' took 0.115
+[2020.10.13-05.48.32:997][228]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Main_BuiltData" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Maps/Main_BuiltData.uasset" SILENT=true
+[2020.10.13-05.48.33:075][228]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/Main_BuiltData9102F3B24925B7446136A09279C2F134.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Maps/Main_BuiltData.uasset'
+[2020.10.13-05.48.33:106][228]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.48.33:106][228]LogContentValidation: Display: Validating World /Game/Maps/Main.Main
+[2020.10.13-05.48.33:106][228]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Main_BuiltData.Main_BuiltData
+[2020.10.13-05.48.35:936][384]LogTemp: Repeating last play command: Selected Viewport
+[2020.10.13-05.48.35:972][384]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.13-05.48.35:972][384]PIE: New page: PIE session: Main (Oct 13, 2020, 3:48:35 PM)
+[2020.10.13-05.48.35:972][384]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.48.35:976][384]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003784s)
+[2020.10.13-05.48.35:978][384]LogAIModule: Creating AISystem for world Main
+[2020.10.13-05.48.35:978][384]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000204E973AC00), frame # 23384
+[2020.10.13-05.48.35:978][384]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000204E00965C0), frame # 23384
+[2020.10.13-05.48.35:978][384]LogPlayLevel: PIE: World Init took: (0.002316s)
+[2020.10.13-05.48.35:979][384]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.006316s)
+[2020.10.13-05.48.35:989][384]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.13-05.48.35:990][384]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.13-05.48.35:990][384]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.13-05.48.35:991][384]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.13-05.48.35:991][384]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.13-05.48.36:002][384]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.13-05.48.36:002][384]LogAudioMixer: Display: 1: FrontRight
+[2020.10.13-05.48.36:140][384]LogAudioMixer: Display: Using Audio Device Speakers (Conexant SmartAudio HD)
+[2020.10.13-05.48.36:140][384]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.13-05.48.36:140][384]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.13-05.48.36:140][384]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.13-05.48.36:141][384]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.13-05.48.36:166][384]LogInit: FAudioDevice initialized.
+[2020.10.13-05.48.36:176][384]LogLoad: Game class is 'GameModeBase'
+[2020.10.13-05.48.36:177][384]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2020.10.13-10.48.36
+[2020.10.13-05.48.36:178][384]LogWorld: Bringing up level for play took: 0.001288
+[2020.10.13-05.48.36:178][384]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2020.10.13-05.48.36:182][384]PIE: Server logged in
+[2020.10.13-05.48.36:183][384]PIE: Play in editor total start time 0.217 seconds.
+[2020.10.13-05.48.39:645][573]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.48.39:645][573]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.48.39:646][573]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2020.10.13-05.48.39:646][573]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.48.39:655][573]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.13-05.48.39:657][573]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.48.39:667][573]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.48.39:697][573]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000204E00965C0), frame # 23573
+[2020.10.13-05.48.39:697][573]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000204E973AC00), frame # 23573
+[2020.10.13-05.48.39:698][573]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2020.10.13-05.48.39:733][574]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2020.10.13-05.48.40:419][604]LogTemp: Repeating last play command: Selected Viewport
+[2020.10.13-05.48.40:445][604]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.13-05.48.40:445][604]PIE: New page: PIE session: Main (Oct 13, 2020, 3:48:40 PM)
+[2020.10.13-05.48.40:445][604]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.48.40:448][604]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003561s)
+[2020.10.13-05.48.40:450][604]LogAIModule: Creating AISystem for world Main
+[2020.10.13-05.48.40:450][604]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000020507626600), frame # 23604
+[2020.10.13-05.48.40:450][604]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000204E9712C00), frame # 23604
+[2020.10.13-05.48.40:451][604]LogPlayLevel: PIE: World Init took: (0.002267s)
+[2020.10.13-05.48.40:451][604]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.006062s)
+[2020.10.13-05.48.40:461][604]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.13-05.48.40:462][604]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.13-05.48.40:462][604]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.13-05.48.40:463][604]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.13-05.48.40:463][604]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.13-05.48.40:476][604]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.13-05.48.40:477][604]LogAudioMixer: Display: 1: FrontRight
+[2020.10.13-05.48.40:610][604]LogAudioMixer: Display: Using Audio Device Speakers (Conexant SmartAudio HD)
+[2020.10.13-05.48.40:611][604]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.13-05.48.40:611][604]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.13-05.48.40:611][604]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.13-05.48.40:611][604]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.13-05.48.40:637][604]LogInit: FAudioDevice initialized.
+[2020.10.13-05.48.40:651][604]LogLoad: Game class is 'GameModeBase'
+[2020.10.13-05.48.40:652][604]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2020.10.13-10.48.40
+[2020.10.13-05.48.40:652][604]LogWorld: Bringing up level for play took: 0.001276
+[2020.10.13-05.48.40:653][604]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2020.10.13-05.48.40:655][604]PIE: Server logged in
+[2020.10.13-05.48.40:656][604]PIE: Play in editor total start time 0.214 seconds.
+[2020.10.13-05.48.49:646][134]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.48.49:646][134]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.48.49:646][134]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2020.10.13-05.48.49:646][134]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.48.49:657][134]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.13-05.48.49:659][134]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.48.49:668][134]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.48.49:702][134]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000204E9712C00), frame # 24134
+[2020.10.13-05.48.49:702][134]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000020507626600), frame # 24134
+[2020.10.13-05.48.49:703][134]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2020.10.13-05.48.49:748][135]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2020.10.13-05.50.39:022][535]LogSlate: Took 0.000586 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.13-05.50.45:312][819]LogUObjectHash: Compacting FUObjectHashTables data took   1.32ms
+[2020.10.13-05.50.46:894][819]LogSlate: Window 'Delete Assets' being destroyed
+[2020.10.13-05.50.47:125][819]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2020.10.13-05.50.47:170][819]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2020.10.13-05.50.47:182][819]LogUObjectHash: Compacting FUObjectHashTables data took   0.32ms
+[2020.10.13-05.50.48:452][873]LogTemp: Repeating last play command: Selected Viewport
+[2020.10.13-05.50.48:487][873]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.13-05.50.48:488][873]PIE: New page: PIE session: Main (Oct 13, 2020, 3:50:48 PM)
+[2020.10.13-05.50.48:488][873]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.50.48:493][873]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005340s)
+[2020.10.13-05.50.48:497][873]LogAIModule: Creating AISystem for world Main
+[2020.10.13-05.50.48:498][873]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000020504A77A00), frame # 24873
+[2020.10.13-05.50.48:498][873]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000204E0345A80), frame # 24873
+[2020.10.13-05.50.48:499][873]LogPlayLevel: PIE: World Init took: (0.005763s)
+[2020.10.13-05.50.48:499][873]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.011443s)
+[2020.10.13-05.50.48:515][873]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.13-05.50.48:516][873]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.13-05.50.48:516][873]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.13-05.50.48:517][873]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.13-05.50.48:517][873]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.13-05.50.48:538][873]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.13-05.50.48:538][873]LogAudioMixer: Display: 1: FrontRight
+[2020.10.13-05.50.48:757][873]LogAudioMixer: Display: Using Audio Device Speakers (Conexant SmartAudio HD)
+[2020.10.13-05.50.48:757][873]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.13-05.50.48:757][873]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.13-05.50.48:757][873]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.13-05.50.48:758][873]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.13-05.50.48:798][873]LogInit: FAudioDevice initialized.
+[2020.10.13-05.50.48:813][873]LogLoad: Game class is 'GameModeBase'
+[2020.10.13-05.50.48:815][873]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2020.10.13-10.50.48
+[2020.10.13-05.50.48:815][873]LogWorld: Bringing up level for play took: 0.001563
+[2020.10.13-05.50.48:816][873]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2020.10.13-05.50.48:820][873]PIE: Server logged in
+[2020.10.13-05.50.48:821][873]PIE: Play in editor total start time 0.335 seconds.
+[2020.10.13-05.50.50:186][940]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.50.50:186][940]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2020.10.13-05.50.50:186][940]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2020.10.13-05.50.50:187][940]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.50.50:197][940]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.13-05.50.50:202][940]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.13-05.50.50:213][940]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.13-05.50.50:255][940]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000204E0345A80), frame # 24940
+[2020.10.13-05.50.50:255][940]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000020504A77A00), frame # 24940
+[2020.10.13-05.50.50:256][940]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2020.10.13-05.50.50:314][941]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2020.10.13-05.57.53:650][607]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/T_Door_BC" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_Door_BC.uasset" SILENT=true
+[2020.10.13-05.57.53:727][607]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/T_Door_BC03114DA9487AADE59EA9999A4251AB93.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_Door_BC.uasset'
+[2020.10.13-05.57.53:911][607]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2020.10.13-05.57.53:940][607]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2020.10.13-05.57.53:950][607]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2020.10.13-05.57.54:018][607]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MM_Wood" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MM_Wood.uasset" SILENT=true
+[2020.10.13-05.57.54:048][607]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MM_Wood77A042BC4A1FDC0D448B549895A106F4.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MM_Wood.uasset'
+[2020.10.13-05.57.54:069][607]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_Ceiling" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Ceiling.uasset" SILENT=true
+[2020.10.13-05.57.54:101][607]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_CeilingCD42D53249641F3BDF79EFB92F88FCCE.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Ceiling.uasset'
+[2020.10.13-05.57.54:124][607]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_DoorMaterial" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_DoorMaterial.uasset" SILENT=true
+[2020.10.13-05.57.54:158][607]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_DoorMaterialC7E3E5A54678FAE908259F92115B4AC3.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_DoorMaterial.uasset'
+[2020.10.13-05.57.54:206][607]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.57.54:206][607]LogContentValidation: Display: Validating Texture2D /Game/Textures/T_Door_BC.T_Door_BC
+[2020.10.13-05.57.54:206][607]LogContentValidation: Display: Validating Material /Game/Materials/MM_Wood.MM_Wood
+[2020.10.13-05.57.54:206][607]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/M_Ceiling.M_Ceiling
+[2020.10.13-05.57.54:206][607]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/M_DoorMaterial.M_DoorMaterial
+[2020.10.13-05.58.07:157][297]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_Ceiling" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Ceiling.uasset" SILENT=true
+[2020.10.13-05.58.07:177][297]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_Ceiling993A36E445E67CF2FA6689956656339A.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Ceiling.uasset'
+[2020.10.13-05.58.07:181][297]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_Ceiling" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Ceiling.uasset" SILENT=true
+[2020.10.13-05.58.07:194][297]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_Ceiling5D800E8C479D3EF73352B898F7FEC4FA.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Ceiling.uasset'
+[2020.10.13-05.58.07:233][297]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.07:233][297]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_Ceiling.MI_Ceiling
+[2020.10.13-05.58.07:233][297]LogContentValidation: Display: Validating ObjectRedirector /Game/Materials/M_Ceiling.M_Ceiling
+[2020.10.13-05.58.12:495][570]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_DoorFrame" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_DoorFrame.uasset" SILENT=true
+[2020.10.13-05.58.12:526][570]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_DoorFrameE9D961B741ECAF59E89CFE87E6B39BDE.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_DoorFrame.uasset'
+[2020.10.13-05.58.12:694][570]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2020.10.13-05.58.12:713][570]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2020.10.13-05.58.12:725][570]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.10.13-05.58.12:796][570]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/SM_DoorFrame" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_DoorFrame.uasset" SILENT=true
+[2020.10.13-05.58.12:828][570]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/SM_DoorFrame309B646C48FB0AA54D73118D9422CF8A.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_DoorFrame.uasset'
+[2020.10.13-05.58.12:864][570]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.12:864][570]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_DoorFrame.MI_DoorFrame
+[2020.10.13-05.58.12:864][570]LogContentValidation: Display: Validating StaticMesh /Game/Meshes/SM_DoorFrame.SM_DoorFrame
+[2020.10.13-05.58.20:471][965]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_Door" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Door.uasset" SILENT=true
+[2020.10.13-05.58.20:491][965]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_DoorE637C1764C3FC186E58118809CEE3461.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Door.uasset'
+[2020.10.13-05.58.20:666][965]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2020.10.13-05.58.20:689][965]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.10.13-05.58.20:699][965]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2020.10.13-05.58.20:772][965]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/SM_Door" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_Door.uasset" SILENT=true
+[2020.10.13-05.58.20:807][965]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/SM_DoorE086DE2A4B05E09D56634383C0FBF3D0.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_Door.uasset'
+[2020.10.13-05.58.20:845][965]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.20:845][965]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_Door.MI_Door
+[2020.10.13-05.58.20:845][965]LogContentValidation: Display: Validating StaticMesh /Game/Meshes/SM_Door.SM_Door
+[2020.10.13-05.58.25:875][223]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_Wood" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Wood.uasset" SILENT=true
+[2020.10.13-05.58.25:897][223]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_Wood3886A1A44CE99248EC248A93887D7597.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Wood.uasset'
+[2020.10.13-05.58.26:074][223]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2020.10.13-05.58.26:095][223]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2020.10.13-05.58.26:104][223]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2020.10.13-05.58.26:165][223]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_Door" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Door.uasset" SILENT=true
+[2020.10.13-05.58.26:190][223]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_DoorED06A43F49FF1B06485E97A50AC18C96.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Door.uasset'
+[2020.10.13-05.58.26:191][223]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_Ceiling" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Ceiling.uasset" SILENT=true
+[2020.10.13-05.58.26:215][223]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_Ceiling645F87114A67A1D829BF4788A3FD3055.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_Ceiling.uasset'
+[2020.10.13-05.58.26:259][223]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.26:260][223]LogContentValidation: Display: Validating Material /Game/Materials/M_Wood.M_Wood
+[2020.10.13-05.58.26:260][223]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_Door.MI_Door
+[2020.10.13-05.58.26:260][223]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_Ceiling.MI_Ceiling
+[2020.10.13-05.58.30:481][438]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_StoneFloor" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneFloor.uasset" SILENT=true
+[2020.10.13-05.58.30:503][438]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_StoneFloor16AEC16B41E35F8095B2AD9C51F83CA4.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneFloor.uasset'
+[2020.10.13-05.58.30:507][438]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_StoneFloor" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_StoneFloor.uasset" SILENT=true
+[2020.10.13-05.58.30:529][438]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_StoneFloor241259CF494BFDF2B406B9A94B68A7AB.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_StoneFloor.uasset'
+[2020.10.13-05.58.30:567][438]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.30:567][438]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_StoneFloor.MI_StoneFloor
+[2020.10.13-05.58.30:567][438]LogContentValidation: Display: Validating ObjectRedirector /Game/Materials/M_StoneFloor.M_StoneFloor
+[2020.10.13-05.58.34:986][666]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_StoneWall" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneWall.uasset" SILENT=true
+[2020.10.13-05.58.35:006][666]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_StoneWallD50DD76A42A5160D6CFFCFAE64BD89B0.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneWall.uasset'
+[2020.10.13-05.58.35:183][666]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2020.10.13-05.58.35:204][666]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2020.10.13-05.58.35:214][666]LogUObjectHash: Compacting FUObjectHashTables data took   0.31ms
+[2020.10.13-05.58.35:285][666]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/SM_Wall" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_Wall.uasset" SILENT=true
+[2020.10.13-05.58.35:319][666]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/SM_WallC6401BF641A739F5B0AE09A1D96B6AB9.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_Wall.uasset'
+[2020.10.13-05.58.35:331][666]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/SM_WallWithDoorway" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_WallWithDoorway.uasset" SILENT=true
+[2020.10.13-05.58.35:362][666]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/SM_WallWithDoorwayAD67A18F4E4CAACC8CBF0295BE710E18.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_WallWithDoorway.uasset'
+[2020.10.13-05.58.35:410][666]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.35:410][666]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_StoneWall.MI_StoneWall
+[2020.10.13-05.58.35:410][666]LogContentValidation: Display: Validating StaticMesh /Game/Meshes/SM_Wall.SM_Wall
+[2020.10.13-05.58.35:410][666]LogContentValidation: Display: Validating StaticMesh /Game/Meshes/SM_WallWithDoorway.SM_WallWithDoorway
+[2020.10.13-05.58.38:856][841]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_StoneRock" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_StoneRock.uasset" SILENT=true
+[2020.10.13-05.58.38:877][841]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_StoneRock323D46A6469ED7E2D433A59BC9626705.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_StoneRock.uasset'
+[2020.10.13-05.58.39:058][841]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2020.10.13-05.58.39:077][841]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.10.13-05.58.39:088][841]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2020.10.13-05.58.39:144][841]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_DoorFrame" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_DoorFrame.uasset" SILENT=true
+[2020.10.13-05.58.39:175][841]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_DoorFrame588DCBB64FEAF73E5BF6AD91FBFF413E.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_DoorFrame.uasset'
+[2020.10.13-05.58.39:177][841]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_StoneWall" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneWall.uasset" SILENT=true
+[2020.10.13-05.58.39:200][841]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_StoneWall82B3E05E4C7C6DC2990E7890EFCC395D.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneWall.uasset'
+[2020.10.13-05.58.39:202][841]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_StoneFloor" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneFloor.uasset" SILENT=true
+[2020.10.13-05.58.39:226][841]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_StoneFloorA8FEC43C4FCF6329BFE4A5A1488047BD.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneFloor.uasset'
+[2020.10.13-05.58.39:268][841]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.39:268][841]LogContentValidation: Display: Validating Material /Game/Materials/M_StoneRock.M_StoneRock
+[2020.10.13-05.58.39:268][841]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_DoorFrame.MI_DoorFrame
+[2020.10.13-05.58.39:268][841]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_StoneWall.MI_StoneWall
+[2020.10.13-05.58.39:268][841]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_StoneFloor.MI_StoneFloor
+[2020.10.13-05.58.45:863][150]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_Brass" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Brass.uasset" SILENT=true
+[2020.10.13-05.58.45:881][150]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_BrassFA06EDF5439428F2B23DB587BA9BD9BD.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_Brass.uasset'
+[2020.10.13-05.58.46:060][150]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2020.10.13-05.58.46:081][150]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2020.10.13-05.58.46:091][150]LogUObjectHash: Compacting FUObjectHashTables data took   0.31ms
+[2020.10.13-05.58.46:151][150]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/SM_Door" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_Door.uasset" SILENT=true
+[2020.10.13-05.58.46:175][150]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/SM_DoorBFA0A2174A9EACF1A83A3D8F30EE3BFE.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Meshes/SM_Door.uasset'
+[2020.10.13-05.58.46:222][150]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-05.58.46:222][150]LogContentValidation: Display: Validating Material /Game/Materials/M_Brass.M_Brass
+[2020.10.13-05.58.46:222][150]LogContentValidation: Display: Validating StaticMesh /Game/Meshes/SM_Door.SM_Door
+[2020.10.13-05.58.53:159][512]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2020.10.13-05.58.54:877][512]LogSlate: Window 'Delete Assets' being destroyed
+[2020.10.13-05.58.55:070][512]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2020.10.13-05.58.55:091][512]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2020.10.13-05.58.55:100][512]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2020.10.13-06.01.00:202][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/T_WallStone" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_WallStone.uasset" SILENT=true
+[2020.10.13-06.01.00:255][390]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/T_WallStoneAD29B4384C41B954839DF6ABB655AE9F.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_WallStone.uasset'
+[2020.10.13-06.01.00:431][390]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2020.10.13-06.01.00:461][390]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.10.13-06.01.00:473][390]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2020.10.13-06.01.00:526][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_StoneRock" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_StoneRock.uasset" SILENT=true
+[2020.10.13-06.01.00:559][390]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/M_StoneRock9916ED9C4791212AEC73729E13B488DA.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/M_StoneRock.uasset'
+[2020.10.13-06.01.00:563][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_DoorFrame" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_DoorFrame.uasset" SILENT=true
+[2020.10.13-06.01.00:592][390]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_DoorFrame1DC03B8441D885570E0B97A0098671E4.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_DoorFrame.uasset'
+[2020.10.13-06.01.00:597][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_StoneWall" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneWall.uasset" SILENT=true
+[2020.10.13-06.01.00:621][390]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_StoneWallB3BBF0DF4C29AFEBE9DB9DAB5CF1E377.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneWall.uasset'
+[2020.10.13-06.01.00:626][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MI_StoneFloor" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneFloor.uasset" SILENT=true
+[2020.10.13-06.01.00:652][390]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MI_StoneFloor8E48947A4C27952375EFD5B7E62FE507.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MI_StoneFloor.uasset'
+[2020.10.13-06.01.00:712][390]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-06.01.00:712][390]LogContentValidation: Display: Validating Texture2D /Game/Textures/T_WallStone.T_WallStone
+[2020.10.13-06.01.00:712][390]LogContentValidation: Display: Validating Material /Game/Materials/M_StoneRock.M_StoneRock
+[2020.10.13-06.01.00:712][390]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_DoorFrame.MI_DoorFrame
+[2020.10.13-06.01.00:712][390]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_StoneWall.MI_StoneWall
+[2020.10.13-06.01.00:712][390]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Materials/MI_StoneFloor.MI_StoneFloor
+[2020.10.13-06.01.09:077][837]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/T_RockCliff" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_RockCliff.uasset" SILENT=true
+[2020.10.13-06.01.09:146][837]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/T_RockCliffD9B5DA5440A51AA746B180AB5CA0C9F7.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_RockCliff.uasset'
+[2020.10.13-06.01.09:318][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2020.10.13-06.01.09:354][837]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2020.10.13-06.01.09:365][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2020.10.13-06.01.09:398][837]AssetCheck: New page: Asset Save: T_RockCliff
+[2020.10.13-06.01.09:398][837]LogContentValidation: Display: Validating Texture2D /Game/Textures/T_RockCliff.T_RockCliff
+[2020.10.13-06.01.23:124][595]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/T_GroundStone" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_GroundStone.uasset" SILENT=true
+[2020.10.13-06.01.23:192][595]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/T_GroundStone2C27BEE442BE6F9FC1F869B0119428B4.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Textures/T_GroundStone.uasset'
+[2020.10.13-06.01.23:352][595]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2020.10.13-06.01.23:376][595]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2020.10.13-06.01.23:390][595]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2020.10.13-06.01.23:468][595]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/MM_Stone" FILE="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MM_Stone.uasset" SILENT=true
+[2020.10.13-06.01.23:511][595]LogSavePackage: Moving 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Saved/MM_StoneCBE1965A4D65D4A0044FF99E725B0FBE.tmp' to 'D:/Projects/UE4UdemyCXX/Section4/Escapegame/Content/Materials/MM_Stone.uasset'
+[2020.10.13-06.01.23:558][595]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.13-06.01.23:558][595]LogContentValidation: Display: Validating Texture2D /Game/Textures/T_GroundStone.T_GroundStone
+[2020.10.13-06.01.23:558][595]LogContentValidation: Display: Validating Material /Game/Materials/MM_Stone.MM_Stone
+[2020.10.13-06.10.29:101][741]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{b89e5ad0-6062-475b-a9d7-4241c762daae}.
+[2020.10.13-06.10.29:101][741]LogTemp: Resetting audio stream to device id 
+[2020.10.13-06.10.29:165][741]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.13-06.10.29:165][741]LogAudioMixer: Display: 1: FrontRight
+[2020.10.13-08.20.14:478][962]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{02d7330d-4ed3-4b73-9a68-0ccabd68a2ea}.
+[2020.10.13-08.20.14:479][962]LogTemp: Resetting audio stream to device id 
+[2020.10.13-08.20.14:521][962]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.13-08.20.14:521][962]LogAudioMixer: Display: 1: FrontRight

@@ -19,7 +19,7 @@ void UOpenDoor::BeginPlay()
 	DoorPitch = GetOwner()->GetActorRotation().Pitch;
 	DoorRoll = GetOwner()->GetActorRotation().Roll;
 	DoorStartYaw = GetOwner()->GetActorRotation().Yaw;
-	TargetYaw = DoorStartYaw + 90.f;
+	TargetYaw = DoorStartYaw + TargetYaw;
 }
 
 // Called every frame
@@ -35,7 +35,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 void UOpenDoor::OpenDoor() const
 {
 
-	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
+	// float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
 
 	// float DoorAlfa = 0.f, AlfaDelta = 0.1f;
 	// float DoorPitch = GetOwner()->GetActorRotation().Pitch;

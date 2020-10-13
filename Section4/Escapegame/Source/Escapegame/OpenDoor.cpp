@@ -26,30 +26,18 @@ void UOpenDoor::BeginPlay()
 void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
-	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, TargetYaw, DeltaTime, 2);
-	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
+	if (PressurePlate->IsOverlappingActor(ActorThatOpens))
+	{
+		OpenDoor(DeltaTime);
+	}
 }
 
-void UOpenDoor::OpenDoor() const
+void UOpenDoor::OpenDoor(float DeltaTime) const
 {
-
-	// float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
-
-	// float DoorAlfa = 0.f, AlfaDelta = 0.1f;
-	// float DoorPitch = GetOwner()->GetActorRotation().Pitch;
-	// float DoorRoll = GetOwner()->GetActorRotation().Roll;
-	// float DoorStartYaw = GetOwner()->GetActorRotation().Yaw;
-	// float TargetYaw = DoorStartYaw + 90.f;
-
-	// while (DoorAlfa <= 1)
-	// {
 	// 	UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
 	// 	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
 
-	// 	DoorAlfa = DoorAlfa + AlfaDelta;
-	// 	float DoorUpdatedYaw = FMath::Lerp(DoorStartYaw, TargetYaw, DoorAlfa);
-	// 	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
-	// }
+	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
+	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, TargetYaw, DeltaTime, 1.1f);
+	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
 }

@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ESCAPEGAME_OpenDoor_generated_h
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_SPARSE_DATA
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_RPC_WRAPPERS
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_INCLASS_NO_PURE_DECLS \
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_SPARSE_DATA
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_RPC_WRAPPERS
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOpenDoor(); \
 	friend struct Z_Construct_UClass_UOpenDoor_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UOpenDoor)
 
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_INCLASS \
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUOpenDoor(); \
 	friend struct Z_Construct_UClass_UOpenDoor_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UOpenDoor)
 
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_STANDARD_CONSTRUCTORS \
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOpenDoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOpenDoor) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_ENHANCED_CONSTRUCTORS \
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UOpenDoor(UOpenDoor&&); \
@@ -58,31 +58,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOpenDoor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOpenDoor)
 
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__TargetYaw() { return STRUCT_OFFSET(UOpenDoor, TargetYaw); }
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__TargetYaw() { return STRUCT_OFFSET(UOpenDoor, TargetYaw); } \
+	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UOpenDoor, PressurePlate); } \
+	FORCEINLINE static uint32 __PPO__ActorThatOpens() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpens); }
 
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_10_PROLOG
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_GENERATED_BODY_LEGACY \
+#define Escapegame_Source_Escapegame_OpenDoor_h_11_PROLOG
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_PRIVATE_PROPERTY_OFFSET \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_SPARSE_DATA \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_RPC_WRAPPERS \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_INCLASS \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_STANDARD_CONSTRUCTORS \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_SPARSE_DATA \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_RPC_WRAPPERS \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_INCLASS \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Escapegame_Source_Escapegame_OpenDoor_h_13_GENERATED_BODY \
+#define Escapegame_Source_Escapegame_OpenDoor_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_PRIVATE_PROPERTY_OFFSET \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_SPARSE_DATA \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_INCLASS_NO_PURE_DECLS \
-	Escapegame_Source_Escapegame_OpenDoor_h_13_ENHANCED_CONSTRUCTORS \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_SPARSE_DATA \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_INCLASS_NO_PURE_DECLS \
+	Escapegame_Source_Escapegame_OpenDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

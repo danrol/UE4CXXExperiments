@@ -27,4 +27,8 @@ public:
 
 private:
 	float TickDeltaTime;
+	float DoorPitch;
+	float DoorRoll;
+	float DoorStartYaw;
+	float TargetYaw;
 };

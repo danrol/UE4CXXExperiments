@@ -34,6 +34,8 @@ private:
 	float DoorPitch;
 	float DoorRoll;
 	float ClosedDoorYaw;
+	float DoorLastOpened = 0.f;
+	float DoorCloseDelay = 0.3f;
 
 	UPROPERTY(EditAnywhere) // makes value editable from editor
 	float OpenedDoorYaw = 90.f;

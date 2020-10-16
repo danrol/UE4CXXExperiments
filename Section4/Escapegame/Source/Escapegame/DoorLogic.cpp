@@ -19,7 +19,7 @@ void UDoorLogic::BeginPlay()
 	DoorPitch = GetOwner()->GetActorRotation().Pitch;
 	DoorRoll = GetOwner()->GetActorRotation().Roll;
 	ClosedDoorYaw = GetOwner()->GetActorRotation().Yaw;
-	OpenedDoorYaw = ClosedDoorYaw + OpenedDoorYaw;
+	OpenAngle = ClosedDoorYaw + OpenAngle;
 
 	if (!PressurePlate)
 	{
@@ -57,13 +57,13 @@ void UDoorLogic::OpenDoor(float DeltaTime)
 	// 	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
 
 	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
-	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, OpenedDoorYaw, DeltaTime, 1.1f);
+	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, OpenAngle, DeltaTime, OpenDoorSpeed);
 	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
 }
 
 void UDoorLogic::CloseDoor(float DeltaTime)
 {
 	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
-	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, ClosedDoorYaw, DeltaTime, 1.1f);
+	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, ClosedDoorYaw, DeltaTime, CloseDoorSpeed);
 	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
 }

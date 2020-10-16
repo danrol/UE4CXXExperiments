@@ -35,14 +35,22 @@ private:
 	float DoorRoll;
 	float ClosedDoorYaw;
 	float DoorLastOpened = 0.f;
+
+	UPROPERTY(EditAnywhere)
 	float DoorCloseDelay = 0.3f;
 
 	UPROPERTY(EditAnywhere) // makes value editable from editor
-	float OpenedDoorYaw = 90.f;
+	float OpenAngle = 90.f;
 
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate;
 
 	UPROPERTY(EditAnywhere)
 	AActor* ActorThatOpens;
+
+	UPROPERTY(EditAnywhere)
+	float OpenDoorSpeed = 1.1f;
+
+	UPROPERTY(EditAnywhere)
+	float CloseDoorSpeed = 1.1f;
 };

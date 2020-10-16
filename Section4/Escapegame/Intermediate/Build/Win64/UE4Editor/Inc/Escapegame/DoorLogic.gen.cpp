@@ -34,6 +34,14 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CloseDoorSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CloseDoorSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OpenDoorSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OpenDoorSpeed;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorThatOpens_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ActorThatOpens;
@@ -42,9 +50,13 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PressurePlate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OpenedDoorYaw_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OpenAngle_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OpenedDoorYaw;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OpenAngle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DoorCloseDelay_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DoorCloseDelay;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -62,6 +74,20 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed_MetaData[] = {
+		{ "Category", "DoorLogic" },
+		{ "ModuleRelativePath", "DoorLogic.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed = { "CloseDoorSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, CloseDoorSpeed), METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenDoorSpeed_MetaData[] = {
+		{ "Category", "DoorLogic" },
+		{ "ModuleRelativePath", "DoorLogic.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenDoorSpeed = { "OpenDoorSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, OpenDoorSpeed), METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenDoorSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenDoorSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_ActorThatOpens_MetaData[] = {
 		{ "Category", "DoorLogic" },
 		{ "ModuleRelativePath", "DoorLogic.h" },
@@ -76,18 +102,28 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate = { "PressurePlate", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, PressurePlate), Z_Construct_UClass_ATriggerVolume_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenedDoorYaw_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenAngle_MetaData[] = {
 		{ "Category", "DoorLogic" },
 		{ "Comment", "// makes value editable from editor\n" },
 		{ "ModuleRelativePath", "DoorLogic.h" },
 		{ "ToolTip", "makes value editable from editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenedDoorYaw = { "OpenedDoorYaw", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, OpenedDoorYaw), METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenedDoorYaw_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenedDoorYaw_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenAngle = { "OpenAngle", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, OpenAngle), METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenAngle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenAngle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_DoorCloseDelay_MetaData[] = {
+		{ "Category", "DoorLogic" },
+		{ "ModuleRelativePath", "DoorLogic.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_DoorCloseDelay = { "DoorCloseDelay", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, DoorCloseDelay), METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_DoorCloseDelay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_DoorCloseDelay_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDoorLogic_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenDoorSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_ActorThatOpens,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenedDoorYaw,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenAngle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_DoorCloseDelay,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UDoorLogic_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UDoorLogic>::IsAbstract,
@@ -116,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UDoorLogic, 1981564702);
+	IMPLEMENT_CLASS(UDoorLogic, 907998300);
 	template<> ESCAPEGAME_API UClass* StaticClass<UDoorLogic>()
 	{
 		return UDoorLogic::StaticClass();

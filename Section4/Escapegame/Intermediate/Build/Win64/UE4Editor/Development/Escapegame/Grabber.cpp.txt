@@ -1,3 +1,4 @@
 D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\Definitions.Escapegame.h
 D:\Projects\UE4UdemyCXX\Section4\Escapegame\Source\Escapegame\Grabber.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Inc\Escapegame\Grabber.generated.h

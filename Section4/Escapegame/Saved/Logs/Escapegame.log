@@ -1033,3 +1033,31 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.10.16-07.58.57:812][672]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
 [2020.10.16-07.58.57:863][673]LogPlayLevel: Display: Destroying online subsystem :Context_7
 [2020.10.16-07.59.01:934][903]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Door)
+[2020.10.16-08.02.46:125][ 54]Candidate modules for hot reload:
+[2020.10.16-08.02.46:125][ 54]  Escapegame
+[2020.10.16-08.02.46:126][ 54]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Escapegame,6058 EscapegameEditor Win64 Development -Project="D:/Projects/UE4UdemyCXX/Section4/Escapegame/Escapegame.uproject" "D:/Projects/UE4UdemyCXX/Section4/Escapegame/Escapegame.uproject"  -IgnoreJunk]
+[2020.10.16-08.02.46:129][ 54]Warning: Starting HotReload took  0.0s.
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: New page: Compilation - Oct 16, 2020, 6:03:04 PM
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: Parsing headers for EscapegameEditor
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   Running UnrealHeaderTool "D:\Projects\UE4UdemyCXX\Section4\Escapegame\Escapegame.uproject" "D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\EscapegameEditor\Development\EscapegameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DAN\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: Reflection code generated for EscapegameEditor in 10.7876761 seconds
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: Building EscapegameEditor...
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: Using Visual Studio 2019 14.27.29111 toolchain (D:\Program Files\VisualStudio\2019\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: Building 6 actions with 4 processes...
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   [1/6] Escapegame.init.gen.cpp
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   [2/6] DoorLogic.cpp
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   [3/6] DoorLogic.gen.cpp
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   [4/6] UE4Editor-Escapegame-6058.lib
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:      Creating library D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-6058.lib and object D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-6058.exp
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   [5/6] UE4Editor-Escapegame-6058.dll
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:      Creating library D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-6058.suppressed.lib and object D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\UE4Editor-Escapegame-6058.suppressed.exp
+[2020.10.16-08.03.04:463][119]CompilerResultsLog:   [6/6] EscapegameEditor.target
+[2020.10.16-08.03.04:463][119]CompilerResultsLog: Total time in Parallel executor: 4.64 seconds
+[2020.10.16-08.03.04:465][119]CompilerResultsLog: Total execution time: 17.77 seconds
+[2020.10.16-08.03.04:465][119]LogMainFrame: MainFrame: Module compiling took 18.353 seconds
+[2020.10.16-08.03.04:522][119]LogClass: Could not find existing class DoorLogic in package /Script/Escapegame for HotReload, assuming new class
+[2020.10.16-08.03.04:536][119]LogHotReload: Re-instancing DoorLogic after hot-reload.
+[2020.10.16-08.03.04:547][119]LogContentBrowser: Native class hierarchy updated for 'Escapegame' in 0.0008 seconds. Added 3 classes and 2 folders.
+[2020.10.16-08.03.04:550][119]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.16-08.03.04:668][119]LogContentBrowser: Native class hierarchy populated in 0.0222 seconds. Added 3469 classes and 833 folders.
+[2020.10.16-08.03.04:668][119]Display: HotReload took 18.6s.

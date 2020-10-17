@@ -24,11 +24,14 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
+	void Grab();
+	void Release();
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
 private:
-UPROPERTY(EditAnywhere)
-	float Reach = 100.f;  // 100.f means reach distance = 100 cm	
-	UPhysicsHandleComponent* PhysicsHandle = nullptr;
+	UInputComponent* InputComponent = nullptr;
+	UPROPERTY(EditAnywhere)
+		float Reach = 100.f;  // 100.f means reach distance = 100 cm	
+		UPhysicsHandleComponent* PhysicsHandle = nullptr; // set it to null ptr so we will be able to check if value is set
 };

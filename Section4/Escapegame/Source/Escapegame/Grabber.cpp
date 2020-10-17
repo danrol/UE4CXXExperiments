@@ -25,13 +25,37 @@ void UGrabber::BeginPlay()
 	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>(); // <> angle brackets allow functions to work with generic types
 	if(PhysicsHandle)
 	{
-		// Physic is found
+		UE_LOG(LogTemp, Warning, TEXT("Physics handle component found on %s!"), *(GetOwner()->GetName()));
 	}
 	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("No physics handle component found on %s!"), *(GetOwner()->GetName()));
 	}
+
+	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>(); // define Input component (for keyboard/mouse/controller maped input)
+	if(InputComponent)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Input component found on %s!"), *(GetOwner()->GetName()));
+		InputComponent->BindAction("Grab", IE_Pressed, this, &UGrabber::Grab); // bind user input button to InputComponent 
+		// InputComponent->BindAction(1, 2, 3, 4); 1 should be defined the same as it is defined in Input window in Unreal. 2 means type of interaction (pressed, released, etc.), 3 reference to object, 4 reference to function that should be called on button pressed
+
+		InputComponent->BindAction("Grab", IE_Released, this, &UGrabber::Release);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Input component not found on %s!"), *(GetOwner()->GetName()));
+	}
 	
+}
+
+void UGrabber::Grab()
+{
+		UE_LOG(LogTemp, Warning, TEXT("Grabber Pressed"));
+}
+
+void UGrabber::Release()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Grabber Released"));
 }
 
 

@@ -11,6 +11,7 @@ UGrabber::UGrabber()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
+
 	// ...
 }
 
@@ -20,7 +21,16 @@ void UGrabber::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	// Checking for Physics Handle Component
+	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>(); // <> angle brackets allow functions to work with generic types
+	if(PhysicsHandle)
+	{
+		// Physic is found
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("No physics handle component found on %s!"), *(GetOwner()->GetName()));
+	}
 	
 }
 
@@ -29,7 +39,6 @@ void UGrabber::BeginPlay()
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
 	// ...
 
 	// Get players viewpoint
@@ -58,7 +67,25 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		5.f
 	);
 
+	FHitResult Hit;
+	// Ray-cast out to a certain distance (Reach)
+	FCollisionQueryParams TraceParams(FName(TEXT("")), false, GetOwner());
 
-	// See what it hits
+	GetWorld()->LineTraceSingleByObjectType( // Trace a ray against the world using object types and return the first blocking hit
+		OUT Hit,
+		PlayerViewPointLocation,
+		LineTraceEnd,
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody), //ECollisionChannel is enum. We check object by his collision type to understand if we it is the object we needed
+		TraceParams
+	);
+
+	AActor* ActorHit = Hit.GetActor();
+	// See what it hits (Log)
+	if (ActorHit)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Actor Hit name %s"), *(ActorHit->GetName()));
+	}
+
+
 }
 

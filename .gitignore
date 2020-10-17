@@ -85,3 +85,7 @@ VSCode Files
 BuildingEscape.code-workspace
 
 *.log
+*.pdb
+*.response
+*.exp
+*.ini

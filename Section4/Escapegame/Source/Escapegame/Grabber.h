@@ -7,8 +7,8 @@
 #include "DrawDebugHelpers.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "Grabber.generated.h"
-
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ESCAPEGAME_API UGrabber : public UActorComponent
@@ -30,4 +30,5 @@ public:
 private:
 UPROPERTY(EditAnywhere)
 	float Reach = 100.f;  // 100.f means reach distance = 100 cm	
+	UPhysicsHandleComponent* PhysicsHandle = nullptr;
 };

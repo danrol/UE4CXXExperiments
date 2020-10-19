@@ -19,23 +19,23 @@ public:
 	// Sets default values for this component's properties
 	UGrabber();
 
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:	
 	void Grab();
 	void Release();
 	void FindPhysicsHandle();
 	void SetupInputComponent();
 	FVector GetPlayersReach() const;
-	FVector GetPlayersWorldPos() const
+	FVector GetPlayersWorldPos() const;
 
 	// Return the first Actor within reach with physics body.
 	FHitResult GetFirstPhysicsBodyInReach();
 
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+protected:
+	// Called when the game starts
+	virtual void BeginPlay() override;
+
 	
 private:
 	UInputComponent* InputComponent = nullptr;

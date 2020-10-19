@@ -15,7 +15,6 @@ UGrabber::UGrabber()
 	// ...
 }
 
-
 // Called when the game starts
 void UGrabber::BeginPlay()
 {
@@ -97,7 +96,6 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	// If the physic handle is attach
 	if (PhysicsHandle->GrabbedComponent)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Setting Target Location for PhysicsHandle"));
 		PhysicsHandle->SetTargetLocation(GetPlayersReach());
 	}
 }

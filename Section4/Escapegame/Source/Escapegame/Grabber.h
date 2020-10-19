@@ -28,6 +28,10 @@ public:
 	void Release();
 	void FindPhysicsHandle();
 	void SetupInputComponent();
+	FVector GetPlayersReach() const;
+	FVector GetPlayersWorldPos() const
+
+	// Return the first Actor within reach with physics body.
 	FHitResult GetFirstPhysicsBodyInReach();
 
 	// Called every frame
@@ -36,7 +40,6 @@ public:
 private:
 	UInputComponent* InputComponent = nullptr;
 	UPhysicsHandleComponent* PhysicsHandle = nullptr; // set it to null ptr so we will be able to check if 
-	FVector LineTraceEnd;
 	UPROPERTY(EditAnywhere)
 		float Reach = 100.f;  // 100.f means reach distance = 100 cm	
 

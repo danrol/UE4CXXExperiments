@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ESCAPEGAME_Grabber_generated_h
 
-#define Escapegame_Source_Escapegame_Grabber_h_16_SPARSE_DATA
-#define Escapegame_Source_Escapegame_Grabber_h_16_RPC_WRAPPERS
-#define Escapegame_Source_Escapegame_Grabber_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define Escapegame_Source_Escapegame_Grabber_h_16_INCLASS_NO_PURE_DECLS \
+#define Escapegame_Source_Escapegame_Grabber_h_14_SPARSE_DATA
+#define Escapegame_Source_Escapegame_Grabber_h_14_RPC_WRAPPERS
+#define Escapegame_Source_Escapegame_Grabber_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Escapegame_Source_Escapegame_Grabber_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUGrabber(); \
 	friend struct Z_Construct_UClass_UGrabber_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UGrabber)
 
 
-#define Escapegame_Source_Escapegame_Grabber_h_16_INCLASS \
+#define Escapegame_Source_Escapegame_Grabber_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUGrabber(); \
 	friend struct Z_Construct_UClass_UGrabber_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UGrabber)
 
 
-#define Escapegame_Source_Escapegame_Grabber_h_16_STANDARD_CONSTRUCTORS \
+#define Escapegame_Source_Escapegame_Grabber_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UGrabber(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UGrabber) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Escapegame_Source_Escapegame_Grabber_h_16_ENHANCED_CONSTRUCTORS \
+#define Escapegame_Source_Escapegame_Grabber_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UGrabber(UGrabber&&); \
@@ -58,31 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UGrabber); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UGrabber)
 
 
-#define Escapegame_Source_Escapegame_Grabber_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Reach() { return STRUCT_OFFSET(UGrabber, Reach); }
-
-
-#define Escapegame_Source_Escapegame_Grabber_h_13_PROLOG
-#define Escapegame_Source_Escapegame_Grabber_h_16_GENERATED_BODY_LEGACY \
+#define Escapegame_Source_Escapegame_Grabber_h_14_PRIVATE_PROPERTY_OFFSET
+#define Escapegame_Source_Escapegame_Grabber_h_11_PROLOG
+#define Escapegame_Source_Escapegame_Grabber_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escapegame_Source_Escapegame_Grabber_h_16_PRIVATE_PROPERTY_OFFSET \
-	Escapegame_Source_Escapegame_Grabber_h_16_SPARSE_DATA \
-	Escapegame_Source_Escapegame_Grabber_h_16_RPC_WRAPPERS \
-	Escapegame_Source_Escapegame_Grabber_h_16_INCLASS \
-	Escapegame_Source_Escapegame_Grabber_h_16_STANDARD_CONSTRUCTORS \
+	Escapegame_Source_Escapegame_Grabber_h_14_PRIVATE_PROPERTY_OFFSET \
+	Escapegame_Source_Escapegame_Grabber_h_14_SPARSE_DATA \
+	Escapegame_Source_Escapegame_Grabber_h_14_RPC_WRAPPERS \
+	Escapegame_Source_Escapegame_Grabber_h_14_INCLASS \
+	Escapegame_Source_Escapegame_Grabber_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Escapegame_Source_Escapegame_Grabber_h_16_GENERATED_BODY \
+#define Escapegame_Source_Escapegame_Grabber_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escapegame_Source_Escapegame_Grabber_h_16_PRIVATE_PROPERTY_OFFSET \
-	Escapegame_Source_Escapegame_Grabber_h_16_SPARSE_DATA \
-	Escapegame_Source_Escapegame_Grabber_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	Escapegame_Source_Escapegame_Grabber_h_16_INCLASS_NO_PURE_DECLS \
-	Escapegame_Source_Escapegame_Grabber_h_16_ENHANCED_CONSTRUCTORS \
+	Escapegame_Source_Escapegame_Grabber_h_14_PRIVATE_PROPERTY_OFFSET \
+	Escapegame_Source_Escapegame_Grabber_h_14_SPARSE_DATA \
+	Escapegame_Source_Escapegame_Grabber_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Escapegame_Source_Escapegame_Grabber_h_14_INCLASS_NO_PURE_DECLS \
+	Escapegame_Source_Escapegame_Grabber_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

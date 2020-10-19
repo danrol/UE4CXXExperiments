@@ -68,19 +68,17 @@ void UGrabber::Grab()
 		// If we hit something then attach the physics handle.
 		if (HitResult.GetActor())
 		{
-			// TODO attach physics handle.
 			UE_LOG(LogTemp, Warning, TEXT("Grabbing Component"));
 			PhysicsHandle->GrabComponentAtLocation
-			(
-				ComponentToGrab,
-				NAME_None, // there is no skeleton socket name so we leave it "blank"
-				LineTraceEnd 
+				(
+					ComponentToGrab,
+					NAME_None, // there is no skeleton socket name so we leave it "blank"
+					GetPlayersReach() 
 			);
 		}
 		else
 		{
-			UE_LOG(LogTemp, Warning, TEXT("No Component to Grab"));
-
+			UE_LOG(LogTemp, Warning, TEXT("No Components to Grab"));
 		}
 }
 
@@ -88,7 +86,6 @@ void UGrabber::Release()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Grabber Released"));
 
-	// TODO remove/release the physics handle
 	PhysicsHandle->ReleaseComponent();
 }
 
@@ -100,45 +97,21 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	// If the physic handle is attach
 	if (PhysicsHandle->GrabbedComponent)
 	{
-		PhysicsHandle->SetTargetLocation(LineTraceEnd);
+		UE_LOG(LogTemp, Warning, TEXT("Setting Target Location for PhysicsHandle"));
+		PhysicsHandle->SetTargetLocation(GetPlayersReach());
 	}
 }
 
 FHitResult UGrabber::GetFirstPhysicsBodyInReach()
 {
-	// Get players viewpoint
-	FVector PlayerViewPointLocation;
-	FRotator PlayerViewPointRotation;
-	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
-		OUT PlayerViewPointLocation, // because OUT macro defined equal to "space"
-		OUT PlayerViewPointRotation  // nothing will be put here. But it helps us remember that transferred vars will be changed
-		);
-
-	// Logging out to test
-	// UE_LOG(LogTemp, Warning, TEXT("Player ViewPointLocation: %s"), *PlayerViewPointLocation.ToString());
-	// UE_LOG(LogTemp, Warning, TEXT("Player ViewPointRotation: %s"), *PlayerViewPointRotation.ToString());
-
-	// Draw a line from player showing the reach
-	LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach; 
-	// DrawDebugLine(
-	// 	GetWorld(),
-	// 	PlayerViewPointLocation,
-	// 	LineTraceEnd,
-	// 	FColor(0, 255, 0),
-	// 	false,
-	// 	0.f,
-	// 	0.f,
-	// 	5.f
-	// );
-
 	FHitResult Hit;
 	// Ray-cast out to a certain distance (Reach)
 	FCollisionQueryParams TraceParams(FName(TEXT("")), false, GetOwner());
 
 	GetWorld()->LineTraceSingleByObjectType( // Trace a ray against the world using object types and return the first blocking hit
 		OUT Hit,
-		PlayerViewPointLocation,
-		LineTraceEnd,
+		GetPlayersWorldPos(),
+		GetPlayersReach(),
 		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody), //ECollisionChannel is enum. We check object by his collision type to understand if we it is the object we needed
 		TraceParams
 	);
@@ -153,3 +126,44 @@ FHitResult UGrabber::GetFirstPhysicsBodyInReach()
 	return Hit;
 }
 
+FVector UGrabber::GetPlayersWorldPos() const
+{
+		// Get players viewpoint
+	FVector PlayerViewPointLocation;
+	FRotator PlayerViewPointRotation;
+	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+		OUT PlayerViewPointLocation, // because OUT macro defined equal to "space"
+		OUT PlayerViewPointRotation  // nothing will be put here. But it helps us remember that transferred vars will be changed
+		);
+
+	// Draw a line from player showing the reach
+	return PlayerViewPointLocation; 
+}
+
+FVector UGrabber::GetPlayersReach() const
+{
+		// Get players viewpoint
+	FVector PlayerViewPointLocation;
+	FRotator PlayerViewPointRotation;
+	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+		OUT PlayerViewPointLocation, // because OUT macro defined equal to "space"
+		OUT PlayerViewPointRotation  // nothing will be put here. But it helps us remember that transferred vars will be changed
+		);
+
+	// Logging out to test
+	// UE_LOG(LogTemp, Warning, TEXT("Player ViewPointLocation: %s"), *PlayerViewPointLocation.ToString());
+	// UE_LOG(LogTemp, Warning, TEXT("Player ViewPointRotation: %s"), *PlayerViewPointRotation.ToString());
+
+	// Draw a line from player showing the reach
+	 return PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach; 
+	// DrawDebugLine(
+	// 	GetWorld(),
+	// 	PlayerViewPointLocation,
+	// 	LineTraceEnd,
+	// 	FColor(0, 255, 0),
+	// 	false,
+	// 	0.f,
+	// 	0.f,
+	// 	5.f
+	// );
+}

@@ -21,17 +21,15 @@ void UGrabber::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Checking for Physics Handle Component
-	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>(); // <> angle brackets allow functions to work with generic types
-	if(PhysicsHandle)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Physics handle component found on %s!"), *(GetOwner()->GetName()));
-	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("No physics handle component found on %s!"), *(GetOwner()->GetName()));
-	}
+	// Find and define physics handle
+	FindPhysicsHandle(); 
 
+	// Find and Bind Input Component
+	SetupInputComponent();
+}
+
+void UGrabber::SetupInputComponent()
+{
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>(); // define Input component (for keyboard/mouse/controller maped input)
 	if(InputComponent)
 	{
@@ -44,8 +42,21 @@ void UGrabber::BeginPlay()
 	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("Input component not found on %s!"), *(GetOwner()->GetName()));
+	}	
+}
+
+void UGrabber::FindPhysicsHandle()
+{
+	// Checking for Physics Handle Component
+	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>(); // <> angle brackets allow functions to work with generic types
+	if(PhysicsHandle)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Physics handle component found on %s!"), *(GetOwner()->GetName()));
 	}
-	
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("No physics handle component found on %s!"), *(GetOwner()->GetName()));
+	}
 }
 
 void UGrabber::Grab()
@@ -109,7 +120,5 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Actor Hit name %s"), *(ActorHit->GetName()));
 	}
-
-
 }
 

@@ -54,7 +54,9 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData[] = {
 		{ "Category", "Grabber" },
+		{ "Comment", "// set it to null ptr so we will be able to check if value is set\n" },
 		{ "ModuleRelativePath", "Grabber.h" },
+		{ "ToolTip", "set it to null ptr so we will be able to check if value is set" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_Reach = { "Reach", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGrabber, Reach), METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData)) };
@@ -88,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGrabber, 3861813229);
+	IMPLEMENT_CLASS(UGrabber, 1972596943);
 	template<> ESCAPEGAME_API UClass* StaticClass<UGrabber>()
 	{
 		return UGrabber::StaticClass();

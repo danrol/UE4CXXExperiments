@@ -62,20 +62,50 @@ void UGrabber::FindPhysicsHandle()
 void UGrabber::Grab()
 {
 		UE_LOG(LogTemp, Warning, TEXT("Grabber Pressed"));
+		FHitResult HitResult = GetFirstPhysicsBodyInReach();
+		UPrimitiveComponent* ComponentToGrab = HitResult.GetComponent();
+
+		// If we hit something then attach the physics handle.
+		if (HitResult.GetActor())
+		{
+			// TODO attach physics handle.
+			UE_LOG(LogTemp, Warning, TEXT("Grabbing Component"));
+			PhysicsHandle->GrabComponentAtLocation
+			(
+				ComponentToGrab,
+				NAME_None, // there is no skeleton socket name so we leave it "blank"
+				LineTraceEnd 
+			);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("No Component to Grab"));
+
+		}
 }
 
 void UGrabber::Release()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Grabber Released"));
-}
 
+	// TODO remove/release the physics handle
+	PhysicsHandle->ReleaseComponent();
+}
 
 // Called every frame
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	// ...
 
+	// If the physic handle is attach
+	if (PhysicsHandle->GrabbedComponent)
+	{
+		PhysicsHandle->SetTargetLocation(LineTraceEnd);
+	}
+}
+
+FHitResult UGrabber::GetFirstPhysicsBodyInReach()
+{
 	// Get players viewpoint
 	FVector PlayerViewPointLocation;
 	FRotator PlayerViewPointRotation;
@@ -84,23 +114,22 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		OUT PlayerViewPointRotation  // nothing will be put here. But it helps us remember that transferred vars will be changed
 		);
 
-	// Loggin out to test
+	// Logging out to test
 	// UE_LOG(LogTemp, Warning, TEXT("Player ViewPointLocation: %s"), *PlayerViewPointLocation.ToString());
 	// UE_LOG(LogTemp, Warning, TEXT("Player ViewPointRotation: %s"), *PlayerViewPointRotation.ToString());
 
 	// Draw a line from player showing the reach
-	// PlayerViewPointRotation.Vector();
-	FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach; 
-	DrawDebugLine(
-		GetWorld(),
-		PlayerViewPointLocation,
-		LineTraceEnd,
-		FColor(0, 255, 0),
-		false,
-		0.f,
-		0.f,
-		5.f
-	);
+	LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach; 
+	// DrawDebugLine(
+	// 	GetWorld(),
+	// 	PlayerViewPointLocation,
+	// 	LineTraceEnd,
+	// 	FColor(0, 255, 0),
+	// 	false,
+	// 	0.f,
+	// 	0.f,
+	// 	5.f
+	// );
 
 	FHitResult Hit;
 	// Ray-cast out to a certain distance (Reach)
@@ -120,5 +149,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Actor Hit name %s"), *(ActorHit->GetName()));
 	}
+
+	return Hit;
 }
 

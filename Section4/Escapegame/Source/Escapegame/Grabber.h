@@ -28,13 +28,15 @@ public:
 	void Release();
 	void FindPhysicsHandle();
 	void SetupInputComponent();
+	FHitResult GetFirstPhysicsBodyInReach();
 
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
 private:
 	UInputComponent* InputComponent = nullptr;
-	UPhysicsHandleComponent* PhysicsHandle = nullptr; // set it to null ptr so we will be able to check if value is set
+	UPhysicsHandleComponent* PhysicsHandle = nullptr; // set it to null ptr so we will be able to check if 
+	FVector LineTraceEnd;
 	UPROPERTY(EditAnywhere)
 		float Reach = 100.f;  // 100.f means reach distance = 100 cm	
 

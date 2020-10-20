@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Components/PrimitiveComponent.h"
 #include "Engine/TriggerVolume.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
@@ -28,6 +29,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void OpenDoor(float DeltaTime);
 	void CloseDoor(float DeltaTime);
+	float TotalMassOfActors() const;
 
 private:
 	float TickDeltaTime;
@@ -46,6 +48,9 @@ private:
 	float OpenAngle = 90.f;
 
 	UPROPERTY(EditAnywhere)
+	float MassToOpenDoor = 10.f;
+
+	UPROPERTY(EditAnywhere)
 	float DoorCloseDelay = 0.3f;
 
 	UPROPERTY(EditAnywhere)
@@ -53,4 +58,5 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float CloseDoorSpeed = 1.1f;
+
 };

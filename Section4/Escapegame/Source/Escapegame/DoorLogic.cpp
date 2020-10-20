@@ -3,6 +3,8 @@
 #include "DoorLogic.h"
 #include "GameFramework/Actor.h"
 
+#define OUT
+
 // Sets default values for this component's properties
 UDoorLogic::UDoorLogic()
 {
@@ -36,7 +38,8 @@ void UDoorLogic::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompo
 	// if (PressurePlate /* check if not null*/ && PressurePlate->IsOverlappingActor(ActorThatOpens))
 	if (PressurePlate)
 	{
-		if (PressurePlate->IsOverlappingActor(ActorThatOpens))
+		// if (PressurePlate->IsOverlappingActor(ActorThatOpens))
+		if (TotalMassOfActors() > MassToOpenDoor)
 		{
 			OpenDoor(DeltaTime);
 			DoorLastOpened = GetWorld()->GetTimeSeconds();
@@ -49,6 +52,19 @@ void UDoorLogic::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompo
 			}
 		}
 	}
+}
+
+float UDoorLogic::TotalMassOfActors() const
+{
+	float TotalMass = 0.f;
+	TArray <AActor*> OverlappingActors;
+	PressurePlate->GetOverlappingActors(OUT OverlappingActors);
+
+	for(AActor* Actor : OverlappingActors)
+	{
+		TotalMass += Actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
+	}
+	return TotalMass;
 }
 
 void UDoorLogic::OpenDoor(float DeltaTime)

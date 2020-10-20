@@ -36,11 +36,9 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	
 private:
 	UInputComponent* InputComponent = nullptr;
-	UPhysicsHandleComponent* PhysicsHandle = nullptr; // set it to null ptr so we will be able to check if 
+	UPhysicsHandleComponent* PhysicsHandle = nullptr; // define as null ptr so we will be able to check if null pointer
 	UPROPERTY(EditAnywhere)
 		float Reach = 100.f;  // 100.f means reach distance = 100 cm	
-
 };

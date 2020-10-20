@@ -23,6 +23,13 @@ void UDoorLogic::BeginPlay()
 	ClosedDoorYaw = GetOwner()->GetActorRotation().Yaw;
 	OpenAngle = ClosedDoorYaw + OpenAngle;
 
+	CheckPressurePlate();
+
+	FindAudioComponent();
+}
+
+void UDoorLogic::CheckPressurePlate() const
+{
 	if (!PressurePlate)
 	{
 		UE_LOG(LogTemp, Error, TEXT("PressurePlate not defined in %s"), *GetOwner()->GetName());
@@ -65,14 +72,39 @@ float UDoorLogic::TotalMassOfActors() const
 
 void UDoorLogic::OpenDoor(float DeltaTime)
 {
+	if(!AudioComponent) {return;}
+	
 	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
 	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, OpenAngle, DeltaTime, OpenDoorSpeed);
 	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
+
+	if(!bIsDoorOpen)
+	{
+		bIsDoorOpen = true;
+		AudioComponent->Play();
+	}
 }
 
 void UDoorLogic::CloseDoor(float DeltaTime)
 {
+	if(!AudioComponent) {return;}
+
 	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
 	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, ClosedDoorYaw, DeltaTime, CloseDoorSpeed);
 	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);
+
+		if(bIsDoorOpen)
+	{
+		bIsDoorOpen = false;
+		AudioComponent->Play();
+	}
+}
+
+void UDoorLogic::FindAudioComponent()
+{
+	AudioComponent = GetOwner()->FindComponentByClass<UAudioComponent>();
+	if (!AudioComponent)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Audio component not found on %s!"), *(GetOwner()->GetName()));
+	}
 }

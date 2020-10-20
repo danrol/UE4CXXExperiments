@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 	ESCAPEGAME_API UClass* Z_Construct_UClass_UDoorLogic();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_Escapegame();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ATriggerVolume_NoRegister();
 // End Cross Module References
 	void UDoorLogic::StaticRegisterNativesUDoorLogic()
@@ -32,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AudioComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CloseDoorSpeed_MetaData[];
 #endif
@@ -72,6 +77,13 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 		{ "ModuleRelativePath", "DoorLogic.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_AudioComponent_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "DoorLogic.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_AudioComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed_MetaData[] = {
 		{ "Category", "DoorLogic" },
@@ -117,6 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate = { "PressurePlate", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDoorLogic, PressurePlate), Z_Construct_UClass_ATriggerVolume_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDoorLogic_Statics::NewProp_PressurePlate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDoorLogic_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_AudioComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_CloseDoorSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_OpenDoorSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDoorLogic_Statics::NewProp_DoorCloseDelay,
@@ -151,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorLogic() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UDoorLogic, 1323753096);
+	IMPLEMENT_CLASS(UDoorLogic, 1936569729);
 	template<> ESCAPEGAME_API UClass* StaticClass<UDoorLogic>()
 	{
 		return UDoorLogic::StaticClass();

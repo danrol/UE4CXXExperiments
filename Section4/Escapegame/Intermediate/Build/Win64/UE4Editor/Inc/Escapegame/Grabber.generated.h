@@ -59,6 +59,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UGrabber); \
 
 
 #define Escapegame_Source_Escapegame_Grabber_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__InputComponent() { return STRUCT_OFFSET(UGrabber, InputComponent); } \
+	FORCEINLINE static uint32 __PPO__PhysicsHandle() { return STRUCT_OFFSET(UGrabber, PhysicsHandle); } \
 	FORCEINLINE static uint32 __PPO__Reach() { return STRUCT_OFFSET(UGrabber, Reach); }
 
 

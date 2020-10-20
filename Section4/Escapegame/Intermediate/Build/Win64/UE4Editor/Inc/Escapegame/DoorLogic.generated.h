@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ESCAPEGAME_DoorLogic_generated_h
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_SPARSE_DATA
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_RPC_WRAPPERS
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_INCLASS_NO_PURE_DECLS \
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_SPARSE_DATA
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_RPC_WRAPPERS
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDoorLogic(); \
 	friend struct Z_Construct_UClass_UDoorLogic_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UDoorLogic)
 
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_INCLASS \
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUDoorLogic(); \
 	friend struct Z_Construct_UClass_UDoorLogic_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UDoorLogic)
 
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_STANDARD_CONSTRUCTORS \
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UDoorLogic(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UDoorLogic) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_ENHANCED_CONSTRUCTORS \
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UDoorLogic(UDoorLogic&&); \
@@ -58,36 +58,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UDoorLogic); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UDoorLogic)
 
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_PRIVATE_PROPERTY_OFFSET \
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UDoorLogic, PressurePlate); } \
 	FORCEINLINE static uint32 __PPO__OpenAngle() { return STRUCT_OFFSET(UDoorLogic, OpenAngle); } \
 	FORCEINLINE static uint32 __PPO__MassToOpenDoor() { return STRUCT_OFFSET(UDoorLogic, MassToOpenDoor); } \
 	FORCEINLINE static uint32 __PPO__DoorCloseDelay() { return STRUCT_OFFSET(UDoorLogic, DoorCloseDelay); } \
 	FORCEINLINE static uint32 __PPO__OpenDoorSpeed() { return STRUCT_OFFSET(UDoorLogic, OpenDoorSpeed); } \
-	FORCEINLINE static uint32 __PPO__CloseDoorSpeed() { return STRUCT_OFFSET(UDoorLogic, CloseDoorSpeed); }
+	FORCEINLINE static uint32 __PPO__CloseDoorSpeed() { return STRUCT_OFFSET(UDoorLogic, CloseDoorSpeed); } \
+	FORCEINLINE static uint32 __PPO__AudioComponent() { return STRUCT_OFFSET(UDoorLogic, AudioComponent); }
 
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_14_PROLOG
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_GENERATED_BODY_LEGACY \
+#define Escapegame_Source_Escapegame_DoorLogic_h_15_PROLOG
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_PRIVATE_PROPERTY_OFFSET \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_SPARSE_DATA \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_RPC_WRAPPERS \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_INCLASS \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_STANDARD_CONSTRUCTORS \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_PRIVATE_PROPERTY_OFFSET \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_SPARSE_DATA \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_RPC_WRAPPERS \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_INCLASS \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Escapegame_Source_Escapegame_DoorLogic_h_17_GENERATED_BODY \
+#define Escapegame_Source_Escapegame_DoorLogic_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_PRIVATE_PROPERTY_OFFSET \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_SPARSE_DATA \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_INCLASS_NO_PURE_DECLS \
-	Escapegame_Source_Escapegame_DoorLogic_h_17_ENHANCED_CONSTRUCTORS \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_PRIVATE_PROPERTY_OFFSET \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_SPARSE_DATA \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_INCLASS_NO_PURE_DECLS \
+	Escapegame_Source_Escapegame_DoorLogic_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

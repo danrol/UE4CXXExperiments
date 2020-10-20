@@ -1,5 +1,7 @@
 D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Development\Escapegame\Definitions.Escapegame.h
 D:\Projects\UE4UdemyCXX\Section4\Escapegame\Source\Escapegame\DoorLogic.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/TriggerVolume.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TriggerVolume.generated.h
 D:\Projects\UE4UdemyCXX\Section4\Escapegame\Intermediate\Build\Win64\UE4Editor\Inc\Escapegame\DoorLogic.generated.h

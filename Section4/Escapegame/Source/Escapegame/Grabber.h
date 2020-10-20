@@ -37,8 +37,13 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	UPROPERTY() // Every variable having with type starting with "U" should have UPROPERTY
 	UInputComponent* InputComponent = nullptr;
+	
+	UPROPERTY()
 	UPhysicsHandleComponent* PhysicsHandle = nullptr; // define as null ptr so we will be able to check if null pointer
+	
+
 	UPROPERTY(EditAnywhere)
-		float Reach = 100.f;  // 100.f means reach distance = 100 cm	
+	float Reach = 100.f;  // 100.f means reach distance = 100 cm	
 };

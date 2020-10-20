@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Engine/TriggerVolume.h"
 #include "Engine/World.h"
@@ -30,6 +31,8 @@ public:
 	void OpenDoor(float DeltaTime);
 	void CloseDoor(float DeltaTime);
 	float TotalMassOfActors() const;
+	void FindAudioComponent();
+	void CheckPressurePlate() const;
 
 private:
 	float TickDeltaTime;
@@ -37,6 +40,7 @@ private:
 	float DoorRoll;
 	float ClosedDoorYaw;
 	float DoorLastOpened = 0.f;
+	bool bIsDoorOpen = false;
 
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate = nullptr;
@@ -55,4 +59,7 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float CloseDoorSpeed = 1.1f;
+
+	UPROPERTY()
+	UAudioComponent* AudioComponent = nullptr;
 };

@@ -67,7 +67,7 @@ void UGrabber::Grab()
 		// If we hit something then attach the physics handle.
 		if (HitResult.GetActor())
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Grabbing Component"));
+			if(!PhysicsHandle) {return;} // return if physics handle is null
 			PhysicsHandle->GrabComponentAtLocation
 				(
 					ComponentToGrab,
@@ -83,8 +83,7 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Grabber Released"));
-
+	if(!PhysicsHandle) {return;}
 	PhysicsHandle->ReleaseComponent();
 }
 

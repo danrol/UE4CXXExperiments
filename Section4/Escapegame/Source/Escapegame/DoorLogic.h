@@ -39,10 +39,7 @@ private:
 	float DoorLastOpened = 0.f;
 
 	UPROPERTY(EditAnywhere)
-	ATriggerVolume* PressurePlate;
-
-	UPROPERTY(EditAnywhere)
-	AActor* ActorThatOpens;
+	ATriggerVolume* PressurePlate = nullptr;
 
 	UPROPERTY(EditAnywhere) // makes value editable from editor
 	float OpenAngle = 90.f;
@@ -58,5 +55,4 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float CloseDoorSpeed = 1.1f;
-
 };

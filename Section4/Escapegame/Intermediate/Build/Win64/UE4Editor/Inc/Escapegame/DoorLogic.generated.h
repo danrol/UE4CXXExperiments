@@ -60,7 +60,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UDoorLogic); \
 
 #define Escapegame_Source_Escapegame_DoorLogic_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UDoorLogic, PressurePlate); } \
-	FORCEINLINE static uint32 __PPO__ActorThatOpens() { return STRUCT_OFFSET(UDoorLogic, ActorThatOpens); } \
 	FORCEINLINE static uint32 __PPO__OpenAngle() { return STRUCT_OFFSET(UDoorLogic, OpenAngle); } \
 	FORCEINLINE static uint32 __PPO__MassToOpenDoor() { return STRUCT_OFFSET(UDoorLogic, MassToOpenDoor); } \
 	FORCEINLINE static uint32 __PPO__DoorCloseDelay() { return STRUCT_OFFSET(UDoorLogic, DoorCloseDelay); } \

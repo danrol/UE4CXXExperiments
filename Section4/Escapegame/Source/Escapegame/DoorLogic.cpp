@@ -27,18 +27,13 @@ void UDoorLogic::BeginPlay()
 	{
 		UE_LOG(LogTemp, Error, TEXT("PressurePlate not defined in %s"), *GetOwner()->GetName());
 	}
-
-	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
 
 // Called every frame
 void UDoorLogic::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	// if (PressurePlate /* check if not null*/ && PressurePlate->IsOverlappingActor(ActorThatOpens))
-	if (PressurePlate)
-	{
-		// if (PressurePlate->IsOverlappingActor(ActorThatOpens))
+	if (!PressurePlate) {return;}
 		if (TotalMassOfActors() > MassToOpenDoor)
 		{
 			OpenDoor(DeltaTime);
@@ -51,12 +46,13 @@ void UDoorLogic::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompo
 			CloseDoor(DeltaTime);
 			}
 		}
-	}
 }
 
 float UDoorLogic::TotalMassOfActors() const
 {
 	float TotalMass = 0.f;
+	if (!PressurePlate) {return TotalMass;}
+
 	TArray <AActor*> OverlappingActors;
 	PressurePlate->GetOverlappingActors(OUT OverlappingActors);
 
@@ -69,9 +65,6 @@ float UDoorLogic::TotalMassOfActors() const
 
 void UDoorLogic::OpenDoor(float DeltaTime)
 {
-	// 	UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
-	// 	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
-
 	float CurrentYaw = GetOwner()->GetActorRotation().Yaw;
 	float DoorUpdatedYaw = FMath::FInterpTo(CurrentYaw, OpenAngle, DeltaTime, OpenDoorSpeed);
 	GetOwner()->SetActorRotation(FRotator(DoorPitch, DoorUpdatedYaw, DoorRoll), ETeleportType::TeleportPhysics);

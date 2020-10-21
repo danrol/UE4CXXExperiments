@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"D:/Projects/UE4UdemyCXX/Section5/ToonTanks/.vscode": true,
+		"D:/Projects/UE4UdemyCXX/Section5/ToonTanks/Content": true,
+		"D:/Projects/UE4UdemyCXX/Section5/ToonTanks/DerivedDataCache": true,
+		"D:/Projects/UE4UdemyCXX/Section5/ToonTanks/Intermediate": true,
+		"D:/Projects/UE4UdemyCXX/Section5/ToonTanks/Saved": true
+	}
+}

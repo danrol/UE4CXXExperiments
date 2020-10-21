@@ -14,13 +14,13 @@ class TOONTANKS_API APawnBase : public APawn
 	GENERATED_BODY()
 
 private:
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true")) // AllowPrivateAccess = "true" allows to private variables to be exposed via blueprint
 	UCapsuleComponent* CapsuleComp; // will be used for collisions
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* BaseMesh;
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* TurretMesh;
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USceneComponent* ProjectileSpawnPoint;	
 
 public:

@@ -21,9 +21,21 @@ void APawnTurret::BeginPlay()
   PlayerPawn = Cast<APawnTank>(UGameplayStatics::GetPlayerPawn(this, 0)); // 0 means get first player pawn (there may be multiple pawns. Multiplayer for example)
 }
 
+void APawnTurret::HandleDestruction() 
+{
+  Super::HandleDestruction();
+}
+
 void APawnTurret::Tick(float DeltaTime) 
 {
 	Super::Tick(DeltaTime);
+
+  if(!PlayerPawn || ReturnDistanceToPlayer() > FireRange)
+  {
+    return;
+  }
+
+  RotateTurret(PlayerPawn->GetActorLocation());
 }
 
 
@@ -38,7 +50,7 @@ void APawnTurret::CheckFireCondition()
     // If Player IS in range Then Fire!!
   if(ReturnDistanceToPlayer() <= FireRange)
   {
-    // Fire
+    Fire();
   }
 }
 

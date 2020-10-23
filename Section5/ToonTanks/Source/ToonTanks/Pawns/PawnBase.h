@@ -26,4 +26,14 @@ private:
 public:
 	// Sets default values for this pawn's properties
 	APawnBase();
+
+
+protected:
+
+	void RotateTurret(FVector LookAtTarget);
+
+	void Fire();
+
+	virtual void HandleDestruction(); // virtual funciton means that this funciton will be overwritten or added in the child class
+
 };

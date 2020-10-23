@@ -53,8 +53,7 @@ void APawnTank::CalculateRotateInput(float Value)
 void APawnTank::Move() 
 {
   AddActorLocalOffset(MoveDirection, true); // bSweep checks for collisions when setting offset. It will help us prevent glitches and bugs
-  UE_LOG(LogTemp, Warning, TEXT("Moving %s!"), *MoveDirection.ToString());
-}
+  }
 
 void APawnTank::Rotate() 
 {

@@ -25,6 +25,8 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Move", meta = (AllowPrivateAccess = "true"))
 	float MovementSpeed = 1300;
 	
+	UFUNCTION() // Dynamic delegates need to be declared using UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherCompo, FVector NormalImpulse, const FHitResult& Hit);
 public:	
 	// Sets default values for this actor's properties
 	AProjectileBase();

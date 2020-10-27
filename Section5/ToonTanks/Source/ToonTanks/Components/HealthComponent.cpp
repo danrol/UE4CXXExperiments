@@ -21,7 +21,11 @@ void UHealthComponent::BeginPlay()
 
 	Health = DefaultHealth;
 	GameModeRef = Cast<ATankGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));	
+	
+	if(GetOwner())
+	{
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::TakeDamage);
+	}
 }
 
 void UHealthComponent::TakeDamage(AActor* DamageActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser) 
@@ -35,7 +39,7 @@ void UHealthComponent::TakeDamage(AActor* DamageActor, float Damage, const UDama
 	}
 
 	Health = FMath::Clamp(Health - Damage, 0.0f, DefaultHealth);
-	UE_LOG(LogTemp, Warning, TEXT("Updated Health = %f"), Health);
+	UE_LOG(LogTemp, Warning, TEXT("After Damage to %s Health = %f"), *GetOwner()->GetName(), Health);
 
 
 	if(Health <= 0)

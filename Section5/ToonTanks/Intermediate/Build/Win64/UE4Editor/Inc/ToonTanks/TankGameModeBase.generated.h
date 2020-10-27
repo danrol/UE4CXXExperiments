@@ -68,7 +68,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATankGameModeBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATankGameModeBase)
 
 
-#define ToonTanks_Source_ToonTanks_GameModes_TankGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET
+#define ToonTanks_Source_ToonTanks_GameModes_TankGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__StartDelay() { return STRUCT_OFFSET(ATankGameModeBase, StartDelay); }
+
+
 #define ToonTanks_Source_ToonTanks_GameModes_TankGameModeBase_h_14_PROLOG \
 	ToonTanks_Source_ToonTanks_GameModes_TankGameModeBase_h_17_EVENT_PARMS
 

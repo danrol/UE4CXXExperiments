@@ -21,6 +21,8 @@ private:
 	int32 TargetTurrets = 0;
 
 	int32 GetTargetTurrentCount();
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Game Loop", meta = (AllowPrivateAccess = "true")) 
+	int32 StartDelay = 3;
 	void HandleGameStart();
 	void HandleGameOver(bool PlayerWon); // c++ implementation with logic. Will call BlueprintImplementationEvent methods
 

@@ -13,14 +13,13 @@ AProjectileBase::AProjectileBase()
 	PrimaryActorTick.bCanEverTick = false;
 
 	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
-	ProjectileMesh->OnComponentHit.AddDynamic(this, &AProjectileBase::OnHit);
+	ProjectileMesh->OnComponentHit.AddDynamic(this, &AProjectileBase::OnHit); // Dynamic binding. Will call OnHit when ProjectileMesh is hit (collision)
 	RootComponent = ProjectileMesh;
 
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovement->InitialSpeed = MovementSpeed;
 	ProjectileMovement->MaxSpeed = MovementSpeed; // if acceleration needed change value
 	InitialLifeSpan = 3.0f; // Projectile will destroy itself from the world after 3 seconds
-
 }
 
 // Called when the game starts or when spawned
@@ -30,7 +29,7 @@ void AProjectileBase::BeginPlay()
 	
 }
 
-void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherCompo, FVector NormalImpulse, const FHitResult& Hit) 
+void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) 
 {
 	AActor* MyOwner = GetOwner();
 	if(!MyOwner)
@@ -41,7 +40,9 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 	if(OtherActor /* check if still exists */ && OtherActor != this /*check that there are no overlapping components inside actor*/ && OtherActor != MyOwner /*prevent destroying pawn that created projectile*/)
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwner->GetInstigatorController(), this, DamageType);
+		UE_LOG(LogTemp, Warning, TEXT("Projectile apply Damage to Actor %s"), *OtherActor->GetName());
 	}
+
 
 	// Play effects TODO
 

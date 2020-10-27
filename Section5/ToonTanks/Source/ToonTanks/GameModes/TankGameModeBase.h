@@ -6,6 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "TankGameModeBase.generated.h"
 
+class APawnTurret;
+class APawnTank;
 /**
  * 
  */
@@ -15,9 +17,14 @@ class TOONTANKS_API ATankGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 
 private:
+	APawnTank* PlayerTank;
+	int32 TargetTurrets = 0;
 
+	int32 GetTargetTurrentCount();
 	void HandleGameStart();
 	void HandleGameOver(bool PlayerWon); // c++ implementation with logic. Will call BlueprintImplementationEvent methods
+
+
 
 public:
 

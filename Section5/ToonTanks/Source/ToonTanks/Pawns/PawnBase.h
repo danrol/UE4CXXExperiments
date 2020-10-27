@@ -31,6 +31,7 @@ private:
 public:
 	// Sets default values for this pawn's properties
 	APawnBase();
+	virtual void HandleDestruction(); // virtual funciton means that this funciton will be overwritten or added in the child class
 
 
 protected:
@@ -39,6 +40,5 @@ protected:
 
 	void Fire();
 
-	virtual void HandleDestruction(); // virtual funciton means that this funciton will be overwritten or added in the child class
 
 };

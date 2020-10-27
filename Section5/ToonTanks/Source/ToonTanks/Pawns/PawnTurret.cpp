@@ -48,6 +48,13 @@ void APawnTurret::CheckFireCondition()
   	UE_LOG(LogTemp, Error, TEXT("Player Pawn is not found"));
     return;
   }
+
+  if(!PlayerPawn->GetIsPlayerAlive())
+  {
+    SetActorTickEnabled(false);
+    return;
+  }
+
     // If Player IS in range Then Fire!!
   if(ReturnDistanceToPlayer() <= FireRange)
   {

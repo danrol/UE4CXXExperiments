@@ -5,6 +5,8 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystem.h"
+#include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
 AProjectileBase::AProjectileBase()
@@ -16,10 +18,13 @@ AProjectileBase::AProjectileBase()
 	ProjectileMesh->OnComponentHit.AddDynamic(this, &AProjectileBase::OnHit); // Dynamic binding. Will call OnHit when ProjectileMesh is hit (collision)
 	RootComponent = ProjectileMesh;
 
+	ParticleTrail = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("ParticleTrail"));
+	ParticleTrail->SetupAttachment(RootComponent);
+
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovement->InitialSpeed = MovementSpeed;
 	ProjectileMovement->MaxSpeed = MovementSpeed; // if acceleration needed change value
-	InitialLifeSpan = 3.0f; // Projectile will destroy itself from the world after 3 seconds
+	InitialLifeSpan = 4.0f; // Projectile will destroy itself from the world after 3 seconds
 }
 
 // Called when the game starts or when spawned
@@ -41,10 +46,11 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwner->GetInstigatorController(), this, DamageType);
 		UE_LOG(LogTemp, Warning, TEXT("Projectile apply Damage to Actor %s"), *OtherActor->GetName());
+		UGameplayStatics::SpawnEmitterAtLocation(this, HitParticle, GetActorLocation());
+		Destroy();
 	}
 
 
 	// Play effects TODO
 
-	Destroy();
 }

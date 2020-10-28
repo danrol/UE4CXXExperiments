@@ -35,6 +35,8 @@ private:
 	UParticleSystem* DeathParticle;
 	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
 	USoundBase* DeathSound;
+	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UCameraShake> DeathShake;
 
 
 public:

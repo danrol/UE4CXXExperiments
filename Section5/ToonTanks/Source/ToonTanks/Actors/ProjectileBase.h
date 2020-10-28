@@ -10,6 +10,7 @@ class UStaticMeshComponent;
 class UParticleSystemComponent;
 class UParticleSystem;
 class USoundBase;
+class UCameraShake;
 
 UCLASS()
 class TOONTANKS_API AProjectileBase : public AActor
@@ -38,6 +39,9 @@ private:
 	USoundBase* HitSound;
 	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
 	USoundBase* LaunchSound;
+	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UCameraShake> HitShake;
+
 	
 	// Functions
 	UFUNCTION() // Dynamic delegates need to be declared using UFUNCTION()

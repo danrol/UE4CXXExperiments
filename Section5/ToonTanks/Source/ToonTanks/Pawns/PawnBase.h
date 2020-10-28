@@ -9,6 +9,7 @@
 class UCapsuleComponent; // Forward declaration
 class AProjectileBase;
 class UHealthComponent;
+class USoundBase;
 
 UCLASS()
 class TOONTANKS_API APawnBase : public APawn
@@ -32,6 +33,8 @@ private:
 	TSubclassOf<AProjectileBase> ProjectileClass;
 	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
 	UParticleSystem* DeathParticle;
+	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	USoundBase* DeathSound;
 
 
 public:

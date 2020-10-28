@@ -9,6 +9,7 @@ class UProjectileMovementComponent;
 class UStaticMeshComponent;
 class UParticleSystemComponent;
 class UParticleSystem;
+class USoundBase;
 
 UCLASS()
 class TOONTANKS_API AProjectileBase : public AActor
@@ -33,6 +34,10 @@ private:
 	float MovementSpeed = 1300;
 	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
 	UParticleSystem* HitParticle;
+	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	USoundBase* HitSound;
+	UPROPERTY(EditAnywhere, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	USoundBase* LaunchSound;
 	
 	// Functions
 	UFUNCTION() // Dynamic delegates need to be declared using UFUNCTION()

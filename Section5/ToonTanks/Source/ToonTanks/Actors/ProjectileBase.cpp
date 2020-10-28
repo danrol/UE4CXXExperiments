@@ -31,6 +31,8 @@ AProjectileBase::AProjectileBase()
 void AProjectileBase::BeginPlay()
 {
 	Super::BeginPlay();
+
+	UGameplayStatics::PlaySoundAtLocation(this, LaunchSound, GetActorLocation());
 	
 }
 
@@ -47,6 +49,7 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwner->GetInstigatorController(), this, DamageType);
 		UE_LOG(LogTemp, Warning, TEXT("Projectile apply Damage to Actor %s"), *OtherActor->GetName());
 		UGameplayStatics::SpawnEmitterAtLocation(this, HitParticle, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, LaunchSound, GetActorLocation());
 		Destroy();
 	}
 

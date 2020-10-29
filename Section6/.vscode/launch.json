@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "ShooterAssetPack (Debug)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPack Win64 Debug Build",
+			"program": "D:\\Projects\\UE4UdemyCXX\\Section6\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPack (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPack Win64 DebugGame Build",
+			"program": "D:\\Projects\\UE4UdemyCXX\\Section6\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPack (Development)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPack Win64 Development Build",
+			"program": "D:\\Projects\\UE4UdemyCXX\\Section6\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPack (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPack Win64 Shipping Build",
+			"program": "D:\\Projects\\UE4UdemyCXX\\Section6\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPack (Test)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPack Win64 Test Build",
+			"program": "D:\\Projects\\UE4UdemyCXX\\Section6\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPackEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPackEditor Win64 Debug Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPackEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPackEditor Win64 DebugGame Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ShooterAssetPackEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "ShooterAssetPackEditor Win64 Development Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+		}
+	]
+}

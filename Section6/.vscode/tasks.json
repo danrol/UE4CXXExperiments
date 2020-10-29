@@ -1,0 +1,1247 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ShooterAssetPack Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win32",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Win64",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"IOS",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Shipping",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPack Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPack Android Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPack",
+				"Android",
+				"Test",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPackEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"Debug",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPackEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ShooterAssetPackEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "ShooterAssetPackEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ShooterAssetPackEditor",
+				"Win64",
+				"Development",
+				"D:\\Projects\\UE4UdemyCXX\\Section6\\ShooterAssetPack.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		}
+	]
+}

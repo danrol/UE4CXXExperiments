@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"D:/Projects/UE4UdemyCXX/Section6/.vscode": true,
+		"D:/Projects/UE4UdemyCXX/Section6/Content": true,
+		"D:/Projects/UE4UdemyCXX/Section6/DerivedDataCache": true,
+		"D:/Projects/UE4UdemyCXX/Section6/Intermediate": true,
+		"D:/Projects/UE4UdemyCXX/Section6/Saved": true
+	}
+}

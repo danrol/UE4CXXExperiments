@@ -12,8 +12,16 @@ class SHOOTERASSETPACK_API AShooterCharacter : public ACharacter
 	GENERATED_BODY()
 
 private:
+// Functions
 	void MoveForward(float AxisValue);
-	void LookUp(float AxisValue);
+	void MoveRight(float AxisValue);
+	void LookUpRate(float AxisValue);
+	void LookRightRate(float AxisValue);
+
+// Variables
+	UPROPERTY(EditAnywhere)
+	float RotationRate = 15.f;
+	
 
 public:
 	// Sets default values for this character's properties

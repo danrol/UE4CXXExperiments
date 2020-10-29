@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ShooterAssetPack",
+			"Path": "D:\\Projects\\UE4UdemyCXX\\Section6\\Source\\ShooterAssetPack.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ShooterAssetPackEditor",
+			"Path": "D:\\Projects\\UE4UdemyCXX\\Section6\\Source\\ShooterAssetPackEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

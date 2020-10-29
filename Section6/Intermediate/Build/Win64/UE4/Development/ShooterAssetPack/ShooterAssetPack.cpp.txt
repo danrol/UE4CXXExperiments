@@ -1,0 +1,2 @@
+D:\Projects\UE4UdemyCXX\Section6\Intermediate\Build\Win64\UE4\Development\ShooterAssetPack\Definitions.ShooterAssetPack.h
+D:\Projects\UE4UdemyCXX\Section6\Source\ShooterAssetPack\ShooterAssetPack.h

@@ -2,6 +2,7 @@
 
 
 #include "ShooterCharacter.h"
+#include "ShooterAssetPack/Gun.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter()
@@ -15,7 +16,8 @@ AShooterCharacter::AShooterCharacter()
 void AShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	GetWorld()->SpawnActor<AGun>(GunClass); // To add child actor in C++ you need to spawn it in the begin play. This time we are spawning blueprint gun actor that inherited from c++ base class
 }
 
 // Called every frame

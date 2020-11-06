@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "ShooterCharacter.generated.h"
 
+class AGun;
+
 UCLASS()
 class SHOOTERASSETPACK_API AShooterCharacter : public ACharacter
 {
@@ -21,6 +23,12 @@ private:
 // Variables
 	UPROPERTY(EditAnywhere)
 	float RotationRate = 15.f;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<AGun> GunClass; // using this we'll be able to point at bluprint gun actor in editor
+
+	UPROPERTY()
+	AGun* Gun; // will be actual reference to gun. Won't be visible in blueprint
 	
 
 public:

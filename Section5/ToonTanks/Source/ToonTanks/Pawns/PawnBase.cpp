@@ -16,7 +16,7 @@ APawnBase::APawnBase()
 
 	CapsuleComp = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CapsuleCollider")); // Init capsule component with name "CapsuleCollider". First added component by default will be root. Anyway we'll define root component for clarity
 
-	RootComponent = CapsuleComp; // Define root component. UCapsuleComponent is derived from USceneComponent. That's why it works
+	RootComponent = CapsuleComp; // Define root component. SetRootComponent(CapsuleCompo) is alternative code to this. UCapsuleComponent is derived from USceneComponent. That's why it works
 
 	BaseMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BaseMesh"));
 	BaseMesh->SetupAttachment(RootComponent); // attach Base Mesh to Root Component

@@ -5,3 +5,5 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 D:\Projects\UE4UdemyCXX\Section6\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\ShooterCharacter.generated.h
+D:\Projects\UE4UdemyCXX\Section6\Source\ShooterAssetPack/Gun.h
+D:\Projects\UE4UdemyCXX\Section6\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\Gun.generated.h

@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SHOOTERASSETPACK_ShooterCharacter_generated_h
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_SPARSE_DATA
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_RPC_WRAPPERS
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_SPARSE_DATA
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_RPC_WRAPPERS
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAShooterCharacter(); \
 	friend struct Z_Construct_UClass_AShooterCharacter_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterCharacter)
 
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_INCLASS \
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAShooterCharacter(); \
 	friend struct Z_Construct_UClass_AShooterCharacter_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterCharacter)
 
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AShooterCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AShooterCharacter) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AShooterCharacter(AShooterCharacter&&); \
@@ -58,31 +58,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AShooterCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AShooterCharacter)
 
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__RotationRate() { return STRUCT_OFFSET(AShooterCharacter, RotationRate); }
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__RotationRate() { return STRUCT_OFFSET(AShooterCharacter, RotationRate); } \
+	FORCEINLINE static uint32 __PPO__GunClass() { return STRUCT_OFFSET(AShooterCharacter, GunClass); } \
+	FORCEINLINE static uint32 __PPO__Gun() { return STRUCT_OFFSET(AShooterCharacter, Gun); }
 
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_9_PROLOG
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_GENERATED_BODY_LEGACY \
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_11_PROLOG
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_SPARSE_DATA \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_RPC_WRAPPERS \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_INCLASS \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_STANDARD_CONSTRUCTORS \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_SPARSE_DATA \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_RPC_WRAPPERS \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_INCLASS \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_GENERATED_BODY \
+#define Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_SPARSE_DATA \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_SPARSE_DATA \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	Section6_Source_ShooterAssetPack_Characters_ShooterCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

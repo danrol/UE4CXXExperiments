@@ -17,7 +17,11 @@ void AShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	GetWorld()->SpawnActor<AGun>(GunClass); // To add child actor in C++ you need to spawn it in the begin play. This time we are spawning blueprint gun actor that inherited from c++ base class
+	Gun = GetWorld()->SpawnActor<AGun>(GunClass); // To add child actor in C++ you need to spawn it in the begin play. This time we are spawning blueprint gun actor that inherited from c++ base class
+
+	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None); // to attach new weapon to the character we need to hide previous weapon bone
+	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket")); // Attach Gun to skeleton socket
+	Gun->SetOwner(this); // define attached gun's owner
 }
 
 // Called every frame

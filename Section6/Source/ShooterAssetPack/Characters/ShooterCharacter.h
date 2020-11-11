@@ -35,6 +35,8 @@ public:
 	// Sets default values for this character's properties
 	AShooterCharacter();
 
+	void Shoot();
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

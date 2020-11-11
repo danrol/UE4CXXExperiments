@@ -22,7 +22,7 @@ AGun::AGun()
 
 void AGun::PullTrigger() 
 {
-	
+	UE_LOG(LogTemp, Warning, TEXT("Trigger Pulled"));
 }
 
 // Called when the game starts or when spawned

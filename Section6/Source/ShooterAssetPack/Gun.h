@@ -22,8 +22,13 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	USkeletalMeshComponent* Mesh;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere) // edit anywhere in case we'll want to change the effect in game
 	UParticleSystem* MuzzleFlash;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* HitParticle;
+
+	UPROPERTY(EditAnywhere)
+	float MaxRange = 1000;
 
 
 public:	

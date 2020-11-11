@@ -42,7 +42,23 @@ void AGun::PullTrigger()
 	FVector ViewPointLocation;
 	FRotator ViewPointRotation;
 	OwnerController->GetPlayerViewPoint(ViewPointLocation, ViewPointRotation);
-	DrawDebugCamera(GetWorld(), ViewPointLocation, ViewPointRotation, 90, 2, FColor::Red, true);
+
+	FVector End = ViewPointLocation + ViewPointRotation.Vector() * MaxRange;
+	// DrawDebugCamera(GetWorld(), ViewPointLocation, ViewPointRotation, 90, 2, FColor::Red, true);
+
+	FHitResult Hit;
+	bool bIsHit = GetWorld()->LineTraceSingleByChannel(Hit, ViewPointLocation, End, ECollisionChannel::ECC_GameTraceChannel1);
+	if(bIsHit)
+	{
+		FVector ShotDirection = -ViewPointRotation.Vector();
+		if (!HitParticle)
+		{
+				UE_LOG(LogTemp, Error, TEXT("Gun Hit Particle is not defined"));
+				return;
+		}
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitParticle, Hit.Location, ShotDirection.Rotation());
+	// DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Red, true);
+	}
 
 }
 

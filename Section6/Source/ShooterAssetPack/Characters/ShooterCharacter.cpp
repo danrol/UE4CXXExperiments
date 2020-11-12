@@ -17,6 +17,8 @@ void AShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	Health = MaxHealth;
+
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass); // To add child actor in C++ you need to spawn it in the begin play. This time we are spawning blueprint gun actor that inherited from c++ base class
 
 	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None); // to attach new weapon to the character we need to hide previous weapon bone
@@ -44,6 +46,21 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Shoot"), IE_Pressed, this, &AShooterCharacter::Shoot);
+}
+
+float AShooterCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) 
+{
+	float DamageApplied = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+	Health -= DamageApplied;
+
+	if(Health < 0)
+	{
+		Health = 0;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("Health = %f"), Health);
+
+	return DamageApplied;
 }
 
 void AShooterCharacter::MoveForward(float AxisValue) 

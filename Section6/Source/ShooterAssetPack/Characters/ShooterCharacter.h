@@ -29,6 +29,12 @@ private:
 
 	UPROPERTY()
 	AGun* Gun; // will be actual reference to gun. Won't be visible in blueprint
+
+	UPROPERTY(EditAnywhere)
+	float MaxHealth = 100;
+
+	UPROPERTY(VisibleAnywhere)
+	float Health;
 	
 
 public:
@@ -42,6 +48,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 protected:
 	// Called when the game starts or when spawned

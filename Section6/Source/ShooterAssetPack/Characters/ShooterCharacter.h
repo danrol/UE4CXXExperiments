@@ -36,7 +36,6 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	float Health;
 	
-
 public:
 	// Sets default values for this character's properties
 	AShooterCharacter();
@@ -50,6 +49,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
+	UFUNCTION(BlueprintPure) // We creating function callable from blueprint. Blueprint pure means that the node only return result or result and won't be part of the flow (without input output)
+	bool IsDead() const;
 
 protected:
 	// Called when the game starts or when spawned

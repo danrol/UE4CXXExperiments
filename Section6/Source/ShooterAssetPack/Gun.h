@@ -30,6 +30,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	float MaxRange = 1000;
 
+	UPROPERTY(EditAnywhere)
+	float Damage = 100;
+
 
 public:	
 	// Sets default values for this actor's properties

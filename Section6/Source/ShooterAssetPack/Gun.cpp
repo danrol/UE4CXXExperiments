@@ -58,6 +58,13 @@ void AGun::PullTrigger()
 		}
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitParticle, Hit.Location, ShotDirection.Rotation());
 	// DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Red, true);
+		FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
+		AActor* HitActor = Hit.GetActor();
+		if(!HitActor)
+		{
+			return;
+		}
+		HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 	}
 
 }

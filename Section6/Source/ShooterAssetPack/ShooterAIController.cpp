@@ -13,8 +13,15 @@ void AShooterAIController::BeginPlay()
 
 void AShooterAIController::Tick(float DeltaTime) 
 {
-  Super::Tick(DeltaSeconds);
-  SetFocus(PlayerPawn); // Set AI pawn's focus to player's pawn
-  MoveToActor(PlayerPawn, 200.f);
-
+  Super::Tick(DeltaTime);
+  if(LineOfSightTo(PlayerPawn))
+  {
+    MoveToActor(PlayerPawn, AcceptanceRadius); // Constantly move to player 
+    SetFocus(PlayerPawn); // Set AI pawn's focus to player's pawn
+  }
+  else
+  {
+    ClearFocus(EAIFocusPriority::Gameplay);
+    StopMovement();
+  }
 }

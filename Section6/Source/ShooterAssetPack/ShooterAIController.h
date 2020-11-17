@@ -17,6 +17,9 @@ class SHOOTERASSETPACK_API AShooterAIController : public AAIController
 	private:
 	APawn* PlayerPawn;
 
+	UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess = "true"))
+	float AcceptanceRadius = 200.f;
+
 	protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

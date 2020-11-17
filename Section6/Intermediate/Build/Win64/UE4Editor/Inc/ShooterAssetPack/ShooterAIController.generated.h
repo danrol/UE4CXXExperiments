@@ -60,7 +60,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AShooterAIController); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AShooterAIController)
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_PRIVATE_PROPERTY_OFFSET
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__AcceptanceRadius() { return STRUCT_OFFSET(AShooterAIController, AcceptanceRadius); }
+
+
 #define Section6_Source_ShooterAssetPack_ShooterAIController_h_12_PROLOG
 #define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

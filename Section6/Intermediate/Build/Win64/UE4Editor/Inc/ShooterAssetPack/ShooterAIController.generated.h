@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SHOOTERASSETPACK_ShooterAIController_generated_h
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_SPARSE_DATA
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_RPC_WRAPPERS
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_INCLASS_NO_PURE_DECLS \
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_SPARSE_DATA
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_RPC_WRAPPERS
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAShooterAIController(); \
 	friend struct Z_Construct_UClass_AShooterAIController_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterAIController)
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_INCLASS \
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAShooterAIController(); \
 	friend struct Z_Construct_UClass_AShooterAIController_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterAIController)
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_STANDARD_CONSTRUCTORS \
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AShooterAIController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AShooterAIController) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_ENHANCED_CONSTRUCTORS \
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AShooterAIController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,31 +60,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AShooterAIController); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AShooterAIController)
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__AcceptanceRadius() { return STRUCT_OFFSET(AShooterAIController, AcceptanceRadius); }
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__AIBehavior() { return STRUCT_OFFSET(AShooterAIController, AIBehavior); }
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_12_PROLOG
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_GENERATED_BODY_LEGACY \
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_14_PROLOG
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_PRIVATE_PROPERTY_OFFSET \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_SPARSE_DATA \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_RPC_WRAPPERS \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_INCLASS \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_STANDARD_CONSTRUCTORS \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_PRIVATE_PROPERTY_OFFSET \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_SPARSE_DATA \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_RPC_WRAPPERS \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_INCLASS \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Section6_Source_ShooterAssetPack_ShooterAIController_h_15_GENERATED_BODY \
+#define Section6_Source_ShooterAssetPack_ShooterAIController_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_PRIVATE_PROPERTY_OFFSET \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_SPARSE_DATA \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_INCLASS_NO_PURE_DECLS \
-	Section6_Source_ShooterAssetPack_ShooterAIController_h_15_ENHANCED_CONSTRUCTORS \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_PRIVATE_PROPERTY_OFFSET \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_SPARSE_DATA \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_INCLASS_NO_PURE_DECLS \
+	Section6_Source_ShooterAssetPack_ShooterAIController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

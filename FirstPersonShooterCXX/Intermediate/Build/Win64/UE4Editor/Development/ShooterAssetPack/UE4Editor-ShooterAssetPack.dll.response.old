@@ -76,6 +76,7 @@
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
+"C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\GameplayTasks\UE4Editor-GameplayTasks.lib"
 /OUT:"D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Binaries\Win64\UE4Editor-ShooterAssetPack.dll"
 /IMPLIB:"D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Development\ShooterAssetPack\UE4Editor-ShooterAssetPack.suppressed.lib"
 /PDB:"D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Binaries\Win64\UE4Editor-ShooterAssetPack.pdb"

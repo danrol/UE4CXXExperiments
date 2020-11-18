@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SHOOTERASSETPACK_MyPawn_generated_h
 
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_SPARSE_DATA
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_SPARSE_DATA
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyPawn(); \
 	friend struct Z_Construct_UClass_AMyPawn_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AMyPawn)
 
 
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_INCLASS \
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyPawn(); \
 	friend struct Z_Construct_UClass_AMyPawn_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AMyPawn)
 
 
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_STANDARD_CONSTRUCTORS \
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyPawn) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_ENHANCED_CONSTRUCTORS \
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyPawn(AMyPawn&&); \
@@ -58,28 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMyPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyPawn)
 
 
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET
-#define Section6_Source_ShooterAssetPack_MyPawn_h_9_PROLOG
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_GENERATED_BODY_LEGACY \
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_9_PROLOG
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_SPARSE_DATA \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_INCLASS \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_STANDARD_CONSTRUCTORS \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_SPARSE_DATA \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_INCLASS \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Section6_Source_ShooterAssetPack_MyPawn_h_12_GENERATED_BODY \
+#define FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_SPARSE_DATA \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
-	Section6_Source_ShooterAssetPack_MyPawn_h_12_ENHANCED_CONSTRUCTORS \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_SPARSE_DATA \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
+	FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -87,7 +87,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SHOOTERASSETPACK_API UClass* StaticClass<class AMyPawn>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Section6_Source_ShooterAssetPack_MyPawn_h
+#define CURRENT_FILE_ID FirstPersonShooterCXX_Source_ShooterAssetPack_MyPawn_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

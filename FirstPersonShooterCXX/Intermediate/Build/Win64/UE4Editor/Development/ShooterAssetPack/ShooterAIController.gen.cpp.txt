@@ -1,7 +1,7 @@
-D:\Projects\UE4UdemyCXX\Section6\Intermediate\Build\Win64\UE4Editor\Development\ShooterAssetPack\Definitions.ShooterAssetPack.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Development\ShooterAssetPack\Definitions.ShooterAssetPack.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Projects\UE4UdemyCXX\Section6\Source\ShooterAssetPack/ShooterAIController.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack/ShooterAIController.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\AIModule\Classes\AIController.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
@@ -41,4 +41,4 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\VisualLogger/VisualLoggerDebugSnapshotInterface.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
-D:\Projects\UE4UdemyCXX\Section6\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\ShooterAIController.generated.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\ShooterAIController.generated.h

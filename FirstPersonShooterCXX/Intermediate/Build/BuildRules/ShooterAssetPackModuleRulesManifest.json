@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Projects\\UE4UdemyCXX\\Section6\\Source\\ShooterAssetPack\\ShooterAssetPack.Build.cs",
-		"D:\\Projects\\UE4UdemyCXX\\Section6\\Source\\ShooterAssetPack.Target.cs",
-		"D:\\Projects\\UE4UdemyCXX\\Section6\\Source\\ShooterAssetPackEditor.Target.cs"
+		"D:\\Projects\\UE4CXXExperiments\\FirstPersonShooterCXX\\Source\\ShooterAssetPack\\ShooterAssetPack.Build.cs",
+		"D:\\Projects\\UE4CXXExperiments\\FirstPersonShooterCXX\\Source\\ShooterAssetPack.Target.cs",
+		"D:\\Projects\\UE4CXXExperiments\\FirstPersonShooterCXX\\Source\\ShooterAssetPackEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.3"
 }

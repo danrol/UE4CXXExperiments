@@ -1,7 +1,11 @@
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\Characters\ShooterCharacter.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\BTService_PlayerLocation.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\BTService_PlayerLocationIfSeen.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\BTTask_ClearBlackboardValue.h
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\BTTask_Shoot.h
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\Gun.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\KillEmAllGameMode.h
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\MyPawn.h
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\ShooterAIController.h
-D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\BTTask_ClearBlackboardValue.h
-D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\BTService_PlayerLocation.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\ShooterGameModeBase.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\ShooterPlayerController.h

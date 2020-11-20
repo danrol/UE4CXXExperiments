@@ -1,0 +1,9 @@
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Development\ShooterAssetPack\Definitions.ShooterAssetPack.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\KillEmAllGameMode.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack\ShooterGameModeBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\ShooterGameModeBase.generated.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\KillEmAllGameMode.generated.h

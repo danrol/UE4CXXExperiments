@@ -3,6 +3,8 @@
 
 #include "ShooterCharacter.h"
 #include "ShooterAssetPack/Gun.h"
+#include "Components/CapsuleComponent.h"
+#include "ShooterAssetPack/ShooterGameModeBase.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter()
@@ -59,6 +61,18 @@ float AShooterCharacter::TakeDamage(float DamageAmount, struct FDamageEvent cons
 		Health = 0;
 	}
 	UE_LOG(LogTemp, Warning, TEXT("Health = %f"), Health);
+
+	if(IsDead())
+	{
+		AShooterGameModeBase* GameMode = GetWorld()->GetAuthGameMode<AShooterGameModeBase>();
+		
+		if(GameMode)
+		{
+			GameMode->PawnKilled(this);
+		}
+		DetachFromControllerPendingDestroy(); // will detach controller from dead character. This way 
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
 
 	return DamageApplied;
 }

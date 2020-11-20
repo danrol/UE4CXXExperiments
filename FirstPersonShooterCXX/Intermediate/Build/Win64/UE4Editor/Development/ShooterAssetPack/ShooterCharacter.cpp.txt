@@ -7,3 +7,13 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\ShooterCharacter.generated.h
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack/Gun.h
 D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\Gun.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Source\ShooterAssetPack/ShooterGameModeBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\Projects\UE4CXXExperiments\FirstPersonShooterCXX\Intermediate\Build\Win64\UE4Editor\Inc\ShooterAssetPack\ShooterGameModeBase.generated.h

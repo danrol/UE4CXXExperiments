@@ -61,6 +61,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AShooterPlayerController); \
 
 
 #define FirstPersonShooterCXX_Source_ShooterAssetPack_ShooterPlayerController_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__WinScreenClass() { return STRUCT_OFFSET(AShooterPlayerController, WinScreenClass); } \
 	FORCEINLINE static uint32 __PPO__LoseScreenClass() { return STRUCT_OFFSET(AShooterPlayerController, LoseScreenClass); } \
 	FORCEINLINE static uint32 __PPO__RestartDelay() { return STRUCT_OFFSET(AShooterPlayerController, RestartDelay); }
 

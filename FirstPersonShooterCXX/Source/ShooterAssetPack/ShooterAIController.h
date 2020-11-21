@@ -17,19 +17,20 @@ class SHOOTERASSETPACK_API AShooterAIController : public AAIController
 	GENERATED_BODY()
 
 	private:
-	APawn* PlayerPawn;
+		APawn* PlayerPawn;
 
-	UPROPERTY(EditAnywhere)
-	class UBehaviorTree* AIBehavior;
-	// UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess = "true"))
-	// float AcceptanceRadius = 200.f;
+		UPROPERTY(EditAnywhere)
+		class UBehaviorTree* AIBehavior;
+		// UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess = "true"))
+		// float AcceptanceRadius = 200.f;
 
 	protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+		// Called when the game starts or when spawned
+		virtual void BeginPlay() override;
 
 	public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+		// Called every frame
+		virtual void Tick(float DeltaTime) override;
+		bool IsDead() const;
 	
 };

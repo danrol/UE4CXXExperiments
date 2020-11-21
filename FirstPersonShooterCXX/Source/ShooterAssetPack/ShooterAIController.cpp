@@ -4,6 +4,7 @@
 #include "ShooterAIController.h"
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Characters/ShooterCharacter.h"
 
 
 void AShooterAIController::BeginPlay() 
@@ -47,4 +48,15 @@ void AShooterAIController::Tick(float DeltaTime)
   //   ClearFocus(EAIFocusPriority::Gameplay);
   //   StopMovement();
   // }
+}
+
+bool AShooterAIController::IsDead() const
+{
+  AShooterCharacter* ControlledCharacter = Cast<AShooterCharacter>(GetPawn());
+  if(ControlledCharacter)
+  {
+    return ControlledCharacter->IsDead();
+  }
+
+  return true; // if controller won't return controlled character, this controller is not controlling anyone and as good as dead
 }

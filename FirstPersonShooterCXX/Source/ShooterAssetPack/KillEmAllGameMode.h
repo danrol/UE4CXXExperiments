@@ -16,4 +16,7 @@ class SHOOTERASSETPACK_API AKillEmAllGameMode : public AShooterGameModeBase
 	
 	public:
 		virtual void PawnKilled(APawn* PawnKilled) override;
+
+	private:
+		void EndGame(bool bIsPlayerWinner); // Controller->GetPawn() will leave camera on the player pawn. Need to change if want to switch camera after death
 };

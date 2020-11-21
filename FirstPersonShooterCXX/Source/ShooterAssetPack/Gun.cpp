@@ -24,36 +24,11 @@ AGun::AGun()
 
 void AGun::PullTrigger() 
 {
-	if(!MuzzleFlash)
-	{
-		UE_LOG(LogTemp, Error, TEXT("Gun Particle system not defined"));
-		return;
-	}
-	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
-
-	// DrawDebugCamera(GetWorld(), GetActorLocation(), GetActorRotation(), 90, 2, FColor::Red, true);
-
-	APawn* OwnerPawn = Cast<APawn>(GetOwner());
-	if(!OwnerPawn){return;}
-
-	AController* OwnerController = OwnerPawn->GetController();
-	if(!OwnerController){return;}
-
-	FVector ViewPointLocation;
-	FRotator ViewPointRotation;
-	OwnerController->GetPlayerViewPoint(ViewPointLocation, ViewPointRotation);
-
-	FVector End = ViewPointLocation + ViewPointRotation.Vector() * MaxRange;
-	// DrawDebugCamera(GetWorld(), ViewPointLocation, ViewPointRotation, 90, 2, FColor::Red, true);
-
 	FHitResult Hit;
-	FCollisionQueryParams CollisionParams;
-	CollisionParams.AddIgnoredActor(this); // prevent collision with self
-	CollisionParams.AddIgnoredActor(GetOwner()); // ignore collision with actor holding
-	bool bIsHit = GetWorld()->LineTraceSingleByChannel(Hit, ViewPointLocation, End, ECollisionChannel::ECC_GameTraceChannel1, CollisionParams);
+	FVector ShotDirection;
+	bool bIsHit = GunTrace(Hit, ShotDirection);
 	if(bIsHit)
 	{
-		FVector ShotDirection = -ViewPointRotation.Vector();
 		if (!HitParticle)
 		{
 				UE_LOG(LogTemp, Error, TEXT("Gun Hit Particle is not defined"));
@@ -63,14 +38,56 @@ void AGun::PullTrigger()
 	// DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Red, true);
 		FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 		AActor* HitActor = Hit.GetActor();
-		if(!HitActor)
+		if(HitActor)
 		{
-			return;
+			AController* OwnerController = GetOwnerController();
+			HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 		}
-		HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
+	}
+}
+
+bool AGun::GunTrace(FHitResult& Hit, FVector& ShotDirection) 
+{
+		if(!MuzzleFlash)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Gun Particle system not defined"));
+		return false;
+	}
+	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
+
+	// DrawDebugCamera(GetWorld(), GetActorLocation(), GetActorRotation(), 90, 2, FColor::Red, true);
+
+	FVector ViewPointLocation;
+	FRotator ViewPointRotation;
+
+	AController* OwnerController = GetOwnerController();
+	if(!OwnerController)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Owner Controller is missing in Gun"));
+		return false;
 	}
 
+	OwnerController->GetPlayerViewPoint(ViewPointLocation, ViewPointRotation);
+	ShotDirection = -ViewPointRotation.Vector();
+
+	FVector End = ViewPointLocation + ViewPointRotation.Vector() * MaxRange;
+	// DrawDebugCamera(GetWorld(), ViewPointLocation, ViewPointRotation, 90, 2, FColor::Red, true);
+
+
+	FCollisionQueryParams CollisionParams;
+	CollisionParams.AddIgnoredActor(this); // prevent collision with self
+	CollisionParams.AddIgnoredActor(GetOwner()); // ignore collision with actor holding
+	return GetWorld()->LineTraceSingleByChannel(Hit, ViewPointLocation, End, ECollisionChannel::ECC_GameTraceChannel1, CollisionParams);
 }
+
+AController* AGun::GetOwnerController() const
+{
+	APawn* OwnerPawn = Cast<APawn>(GetOwner());
+	if(!OwnerPawn){return nullptr;}
+
+	return OwnerPawn->GetController();
+}
+
 
 // Called when the game starts or when spawned
 void AGun::BeginPlay()
@@ -85,4 +102,5 @@ void AGun::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
 

@@ -62,6 +62,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGun); \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AGun, Root); } \
 	FORCEINLINE static uint32 __PPO__Mesh() { return STRUCT_OFFSET(AGun, Mesh); } \
 	FORCEINLINE static uint32 __PPO__MuzzleFlash() { return STRUCT_OFFSET(AGun, MuzzleFlash); } \
+	FORCEINLINE static uint32 __PPO__MuzzleSound() { return STRUCT_OFFSET(AGun, MuzzleSound); } \
+	FORCEINLINE static uint32 __PPO__BulletImpactSound() { return STRUCT_OFFSET(AGun, BulletImpactSound); } \
 	FORCEINLINE static uint32 __PPO__HitParticle() { return STRUCT_OFFSET(AGun, HitParticle); } \
 	FORCEINLINE static uint32 __PPO__MaxRange() { return STRUCT_OFFSET(AGun, MaxRange); } \
 	FORCEINLINE static uint32 __PPO__Damage() { return STRUCT_OFFSET(AGun, Damage); }

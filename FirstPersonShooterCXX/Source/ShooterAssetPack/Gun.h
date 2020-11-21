@@ -24,6 +24,13 @@ private:
 
 	UPROPERTY(EditAnywhere) // edit anywhere in case we'll want to change the effect in game
 	UParticleSystem* MuzzleFlash;
+
+	UPROPERTY(EditAnywhere) 
+	USoundBase* MuzzleSound;
+
+	UPROPERTY(EditAnywhere) 
+	USoundBase* BulletImpactSound;
+
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* HitParticle;
 

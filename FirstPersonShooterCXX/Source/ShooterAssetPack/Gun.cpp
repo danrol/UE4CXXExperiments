@@ -24,6 +24,10 @@ AGun::AGun()
 
 void AGun::PullTrigger() 
 {
+	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
+	UGameplayStatics::SpawnSoundAttached(MuzzleSound, Mesh, TEXT("MuzzleFlashSocket"));
+	//static UAudioComponent* SpawnSoundAtLocation(const UObject* WorldContextObject, USoundBase* Sound, FVector /////Location
+
 	FHitResult Hit;
 	FVector ShotDirection;
 	bool bIsHit = GunTrace(Hit, ShotDirection);
@@ -35,9 +39,12 @@ void AGun::PullTrigger()
 				return;
 		}
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitParticle, Hit.Location, ShotDirection.Rotation());
+		UGameplayStatics::SpawnSoundAtLocation(GetWorld(), BulletImpactSound, Hit.Location);
+
 	// DrawDebugPoint(GetWorld(), Hit.Location, 20, FColor::Red, true);
 		FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 		AActor* HitActor = Hit.GetActor();
+		
 		if(HitActor)
 		{
 			AController* OwnerController = GetOwnerController();
@@ -53,7 +60,6 @@ bool AGun::GunTrace(FHitResult& Hit, FVector& ShotDirection)
 		UE_LOG(LogTemp, Error, TEXT("Gun Particle system not defined"));
 		return false;
 	}
-	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
 
 	// DrawDebugCamera(GetWorld(), GetActorLocation(), GetActorRotation(), 90, 2, FColor::Red, true);
 

@@ -18,7 +18,14 @@ class SHOOTERASSETPACK_API AShooterPlayerController : public APlayerController
 	public:
 		virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool bIsWinner = false) override;
 
+	protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
 	private:
+		UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> HudScreenClass;
+
 		UPROPERTY(EditAnywhere)
 		TSubclassOf<UUserWidget> WinScreenClass;
 
@@ -29,5 +36,8 @@ class SHOOTERASSETPACK_API AShooterPlayerController : public APlayerController
 		float RestartDelay = 5.f;
 
 		FTimerHandle RestartTimer;
+
+		UPROPERTY()
+		UUserWidget* HUD;
 	
 };

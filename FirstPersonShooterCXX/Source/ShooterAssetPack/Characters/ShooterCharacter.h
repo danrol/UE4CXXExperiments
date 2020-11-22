@@ -53,6 +53,9 @@ public:
 	UFUNCTION(BlueprintPure) // We creating function callable from blueprint. Blueprint pure means that the node only return result or result and won't be part of the flow (without input output)
 	bool IsDead() const;
 
+	UFUNCTION(BlueprintPure)
+	float GetHealthPercent() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
